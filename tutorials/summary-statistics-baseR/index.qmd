@@ -1,0 +1,15 @@
+---
+title: "Summarizing Data"
+---
+
+In this tutorial you will learn about summarizing data. Summarizing data is important for...
+
+We will cover the following topics: 
+
+-   Loading, inspecting and structuring data
+
+-   Summary statistics
+
+-   Apply over all numeric columns
+
+-   Accounting for missing values in your data 

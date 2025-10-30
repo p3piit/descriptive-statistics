@@ -1,0 +1,16 @@
+---
+title: "Frequency Tables"
+---
+
+In this tutorial, you will learn:
+
+-   How to create a frequency table in R
+
+We assume that you already know:
+
+-   What measurement levels are
+
+-   How to open a dataset (.csv) in R
+
+-   What a frequency table is
+

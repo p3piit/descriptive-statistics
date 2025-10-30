@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./quizzes/second_tutorial/index.html" rel="prev">
+<link href="./quizzes/summarizing-data-baseR/index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -84,6 +84,19 @@ div.callout-reading-advanced.callout-style-default .callout-icon::before, div.ca
   content: '\f518' !important;
   background-image: none;
 }
+div.callout-practice.callout {
+  border-left-color: green;
+}
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f085' !important;
+  background-image: none;
+}
 div.callout-reading.callout {
   border-left-color: purple;
 }
@@ -110,19 +123,6 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
   content: '\f0c1' !important;
   background-image: none;
 }
-div.callout-practice.callout {
-  border-left-color: green;
-}
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f085' !important;
-  background-image: none;
-}
 </style>
 
 
@@ -147,7 +147,7 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Module Template</span></a>
+<span class="menu-text">Descriptive Statistics</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -195,8 +195,8 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./tutorials/first_tutorial/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">First Tutorial</span></a>
+            <a href="./tutorials/frequency-tables-baseR/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Frequency Tables</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -204,25 +204,19 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorials/first_tutorial/topic1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Code Blocks</span></a>
+  <a href="./tutorials/frequency-tables-baseR/topic1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">First Topic</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorials/first_tutorial/topic2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Divs &amp; Callouts</span></a>
+  <a href="./tutorials/frequency-tables-baseR/topic2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Second Topic</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorials/first_tutorial/topic3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Images &amp; Figures</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./quizzes/first_tutorial/index.html" class="sidebar-item-text sidebar-link">
+  <a href="./quizzes/frequency-tables-baseR/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Knowledge Quiz</span></a>
   </div>
 </li>
@@ -230,8 +224,8 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./tutorials/second_tutorial/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Second Tutorial</span></a>
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">tutorials/summarizing-data-baseR/index.qmd</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -239,19 +233,7 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorials/second_tutorial/topic1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">First Topic</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tutorials/second_tutorial/topic2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Second Topic</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./quizzes/second_tutorial/index.html" class="sidebar-item-text sidebar-link">
+  <a href="./quizzes/summarizing-data-baseR/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Knowledge Quiz</span></a>
   </div>
 </li>
@@ -709,7 +691,7 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./quizzes/second_tutorial/index.html" class="pagination-link" aria-label="Knowledge Quiz">
+      <a href="./quizzes/summarizing-data-baseR/index.html" class="pagination-link" aria-label="Knowledge Quiz">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Knowledge Quiz</span>
       </a>          
   </div>

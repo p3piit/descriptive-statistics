@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Module Template – Descriptive Statistics</title>
+<title>Descriptive Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,6 +70,19 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
+div.callout-practice.callout {
+  border-left-color: green;
+}
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f085' !important;
+  background-image: none;
+}
 div.callout-reading.callout {
   border-left-color: purple;
 }
@@ -109,19 +122,6 @@ div.callout-reading-advanced.callout-style-default .callout-icon::before, div.ca
   content: '\f518' !important;
   background-image: none;
 }
-div.callout-practice.callout {
-  border-left-color: green;
-}
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f085' !important;
-  background-image: none;
-}
 </style>
 
 
@@ -146,7 +146,7 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Module Template</span></a>
+<span class="menu-text">Descriptive Statistics</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -194,8 +194,8 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./tutorials/first_tutorial/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">First Tutorial</span></a>
+            <a href="./tutorials/frequency-tables-baseR/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Frequency Tables</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -203,25 +203,19 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorials/first_tutorial/topic1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Code Blocks</span></a>
+  <a href="./tutorials/frequency-tables-baseR/topic1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">First Topic</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorials/first_tutorial/topic2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Divs &amp; Callouts</span></a>
+  <a href="./tutorials/frequency-tables-baseR/topic2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Second Topic</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorials/first_tutorial/topic3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Images &amp; Figures</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./quizzes/first_tutorial/index.html" class="sidebar-item-text sidebar-link">
+  <a href="./quizzes/frequency-tables-baseR/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Knowledge Quiz</span></a>
   </div>
 </li>
@@ -229,8 +223,8 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./tutorials/second_tutorial/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Second Tutorial</span></a>
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">tutorials/summarizing-data-baseR/index.qmd</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -238,19 +232,7 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tutorials/second_tutorial/topic1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">First Topic</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tutorials/second_tutorial/topic2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Second Topic</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./quizzes/second_tutorial/index.html" class="sidebar-item-text sidebar-link">
+  <a href="./quizzes/summarizing-data-baseR/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Knowledge Quiz</span></a>
   </div>
 </li>
@@ -273,7 +255,7 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Module Template</h1>
+<h1 class="title">Descriptive Statistics</h1>
 </div>
 
 
@@ -290,33 +272,34 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
 </header>
 
 
-<p>Welcome to our template module. Every module comprises a series of topical <em>tutorials</em>, such as the three linked below.</p>
+<p>Welcome to the <em>Descriptive Statistics</em> module! In this module, you will learn about:</p>
 <ol type="1">
-<li><a href="./tutorials/first_tutorial/index.html">First Topic</a></li>
-<li><a href="./tutorials/second_tutorial/index.html">Second Topic</a></li>
+<li><a href="./tutorials/frequency-tables-baseR/index.html">Frequency tables</a></li>
+<li><a href="./tutorials/summarizing-data-baseR/index.qmd">Summarizing data - Base R</a></li>
 </ol>
-<p>Each tutorial will comprise a series of interactive lessons with practice problems embedded throughout. Each tutorial section should be wrapped up with a knowledge quiz.</p>
+<p>Each tutorial will comprise a series of interactive lessons with practice problems embedded throughout. Each tutorial section is wrapped up with a knowledge quiz.</p>
 <section id="learning-goals" class="level2">
 <h2 class="anchored" data-anchor-id="learning-goals">Learning Goals</h2>
 <p>After completing this module, you will be able to:</p>
-<section id="tutorial-1" class="level3">
-<h3 class="anchored" data-anchor-id="tutorial-1">Tutorial 1</h3>
-<ol type="1">
-<li>A thing you should learn from Tutorial 1.</li>
-<li>Another thing you should learn from Tutorial 1.</li>
-<li>One more thing you should learn From Tutorial 1.</li>
-</ol>
-</section>
-<section id="tutorial-2" class="level3">
-<h3 class="anchored" data-anchor-id="tutorial-2">Tutorial 2</h3>
+<section id="frequency-tables---base-r" class="level3">
+<h3 class="anchored" data-anchor-id="frequency-tables---base-r">Frequency Tables - Base R</h3>
 <ol type="1">
 <li>A thing you should learn from Tutorial 2.</li>
 <li>Another thing you should learn from Tutorial 2.</li>
 </ol>
+</section>
+<section id="summarizing-data---base-r" class="level3">
+<h3 class="anchored" data-anchor-id="summarizing-data---base-r">Summarizing Data - Base R</h3>
+<ol type="1">
+<li>Load, inspect, structure ( head, str), summary of all (summary())</li>
+<li>Summary statistics: mean, median, var, sd, min, max, range</li>
+<li>Apply over all numeric columns, sapply</li>
+<li>Accounting for missing values in your data (na.rm)</li>
+</ol>
 <p>Click the button below to get started with the first tutorial.</p>
 <div class="cell" data-layout-align="center">
 <section id="buttons">
-<a id="beginButton" class="btn btn-primary" href="./tutorials/first_tutorial/index.html" role="button"> Begin Tutorial </a>
+<a id="beginButton" class="btn btn-primary" href="./tutorials/frequency-tables-baseR/index.html" role="button"> Begin Tutorial </a>
 </section>
 </div>
 

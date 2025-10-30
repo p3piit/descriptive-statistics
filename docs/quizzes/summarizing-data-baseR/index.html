@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>In Progress – Descriptive Statistics</title>
+<title>Knowledge Quiz: Tutorial 1 – Descriptive Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b552c22ab61df7af034dbe18709175fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../conclusion.html" rel="next">
+<link href="../../tutorials/summarizing-data-baseR/topic3.qmd" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-b552c22ab61df7af034dbe18709175fd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,6 +72,19 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
+div.callout-practice.callout {
+  border-left-color: green;
+}
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f085' !important;
+  background-image: none;
+}
 div.callout-resource.callout {
   border-left-color: orange;
 }
@@ -109,27 +124,42 @@ div.callout-reading-advanced.callout-style-default .callout-icon::before, div.ca
   content: '\f518' !important;
   background-image: none;
 }
-div.callout-practice.callout {
-  border-left-color: green;
-}
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f085' !important;
-  background-image: none;
-}
 </style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="html/webex.css">
-<link rel="stylesheet" href="html/system_page.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../html/webex.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -146,7 +176,7 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
 <span class="menu-text">Open-Stat-Prog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
 <span class="menu-text">Descriptive Statistics</span></a>
   </li>  
 </ul>
@@ -170,20 +200,95 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/summarizing-data-baseR/topic1.qmd">tutorials/summarizing-data-baseR/index.qmd</a></li><li class="breadcrumb-item"><a href="../../quizzes/summarizing-data-baseR/index.html">Knowledge Quiz</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tutorials/frequency-tables-baseR/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Frequency Tables</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/frequency-tables-baseR/topic1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">First Topic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/frequency-tables-baseR/topic2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Second Topic</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../quizzes/frequency-tables-baseR/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Knowledge Quiz</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">tutorials/summarizing-data-baseR/index.qmd</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../quizzes/summarizing-data-baseR/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Knowledge Quiz</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conclusion</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tutorials/summarizing-data-baseR/topic1.qmd">tutorials/summarizing-data-baseR/index.qmd</a></li><li class="breadcrumb-item"><a href="../../quizzes/summarizing-data-baseR/index.html">Knowledge Quiz</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">In Progress</h1>
+<h1 class="title">Knowledge Quiz: Tutorial 1</h1>
 </div>
 
 
@@ -200,19 +305,116 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
 </header>
 
 
-<p>Sorry, we’re still building the page you’ve requested.</p>
-<p>It’s almost done…really.</p>
-<p>We’re just working through a few minor issues…</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./assets/images/ankita_towerfall.gif" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption><a href="https://giphy.com/gifs/glas-2018-xThta7bR3Ttrf6rWlq">Image Source</a></figcaption>
-</figure>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Click the check-mark button to check your answer.</li>
+<li>Click the question-mark button to see an explanation of the solution.</li>
+</ul>
+</div>
+</div>
+</div></div><div class="cell" data-layout-align="center">
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Which of the following expressions will return <code>TRUE</code>?</p>
+<div id="webex-5dd6853313ea460e3a25f53a524b68ae" class="webex-checkboxgroup" data-answer="blRIBxQFHwMdAklQaQ==">
+<label><input type="checkbox" autocomplete="off" name="5dd6853313ea460e3a25f53a524b68ae"><span><code>"alice" == "bob" | "alice" != "alice"</code></span></label><label><input type="checkbox" autocomplete="off" name="5dd6853313ea460e3a25f53a524b68ae"><span><code>(8 - 1) == 7 &amp; 7 &gt;= (14 / 2)</code></span></label><label><input type="checkbox" autocomplete="off" name="5dd6853313ea460e3a25f53a524b68ae"><span><code>(8 - 1) == 7 &amp; 7 &gt; (14 / 2)</code></span></label><label><input type="checkbox" autocomplete="off" name="5dd6853313ea460e3a25f53a524b68ae"><span><code>TRUE &amp; FALSE</code></span></label><label><input type="checkbox" autocomplete="off" name="5dd6853313ea460e3a25f53a524b68ae"><span><code>"foo" != "bar"</code></span></label><label><input type="checkbox" autocomplete="off" name="5dd6853313ea460e3a25f53a524b68ae"><span><code>(8 + 6) &lt; (8 * 6)</code></span></label>
+</div>
+</div>
+<div class="webex-solution">
+<ul>
+<li>FALSE: “alice” is not equal to “bob”, and “alice” is equal to “alice”</li>
+<li>TRUE: 7 is equal to 7, and 7 is greater than or equal to 7</li>
+<li>FALSE: 7 is equal to 7, but 7 is not strictly greater than 7</li>
+<li>FALSE: Trivially</li>
+<li>TRUE: “foo” is not equal to “bar”</li>
+<li>TRUE: 14 is strictly less than 48</li>
+</ul>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>What is the value of <span class="math inline">\(x\)</span> in the following equation?</p>
+<p><span class="math display">\[
+x = \frac{2 + 1}{5}
+\]</span></p>
+<p>Round your answer to two decimal places.</p>
+<p><input class="webex-solveme nospaces" id="webex-4fc1ec900f9c29730b1e81eb3a504193" data-tol="0.01" size="20" data-answer="b0RTH1NBZA=="></p>
+</div>
+<div class="webex-solution">
+<p>After rounding, we get 0.60.</p>
+</div>
+</div>
+<div class="webex-question">
+<div class="webex-check webex-box">
+<p>Use the following help file excerpt to answer the question below.</p>
+<div class="cell" data-layout-align="center" data-printr.help.sections="usage">
+<div class="cell-output-display">
+<div class="r-help-page"><div class="container"><main>
+
+
+<table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>cor</td>
+<td style="text-align: right;">R Documentation</td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 class="anchored">Correlation, Variance and Covariance (Matrices)</h2>
+
+<h3 class="anchored">Usage</h3>
+
+<pre><code class="language-R">var(x, y = NULL, na.rm = FALSE, use)
+
+cov(x, y = NULL, use = "everything",
+    method = c("pearson", "kendall", "spearman"))
+
+cor(x, y = NULL, use = "everything",
+    method = c("pearson", "kendall", "spearman"))
+
+cov2cor(V)
+</code></pre>
+
+</main>
+
+</div>
+</div>
+</div>
+</div>
+<p>What is the default value for the <code>use</code> argument of the <code>cor()</code> function?</p>
+<div id="webex-4c7068ae4f8585d28b1865d834d56e09" class="webex-radiogroup" data-answer="b1MbABoJTVUYVmU=">
+<label><input type="radio" autocomplete="off" name="4c7068ae4f8585d28b1865d834d56e09"><span><code>"kendall"</code></span></label><label><input type="radio" autocomplete="off" name="4c7068ae4f8585d28b1865d834d56e09"><span><code>NULL</code></span></label><label><input type="radio" autocomplete="off" name="4c7068ae4f8585d28b1865d834d56e09"><span><code>"everything"</code></span></label><label><input type="radio" autocomplete="off" name="4c7068ae4f8585d28b1865d834d56e09"><span><code>"spearman"</code></span></label><label><input type="radio" autocomplete="off" name="4c7068ae4f8585d28b1865d834d56e09"><span><code>x</code></span></label>
+</div>
+</div>
+<div class="webex-solution">
+<p>The default value for the <code>use</code> argument is <code>"everything"</code>.</p>
+<ul>
+<li>Wrong: This is one of the possible methods</li>
+<li>Wrong: This is the default value for <code>y</code></li>
+<li>Correct</li>
+<li>Wrong: This is one of the possible methods</li>
+<li>Wrong: This is an argument name</li>
+</ul>
+</div>
+</div>
 </div>
 
 
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -619,11 +821,23 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../tutorials/summarizing-data-baseR/topic3.qmd" class="pagination-link" aria-label="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../conclusion.html" class="pagination-link" aria-label="Conclusion">
+        <span class="nav-page-text">Conclusion</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><a href="https://uu.nl"><img src="./assets/images/UU_logo_2021_EN_BLACK.png" class="img-fluid" alt="UU" width="200"></a></p>
+<p><a href="https://uu.nl"><img src="../../assets/images/UU_logo_2021_EN_BLACK.png" class="img-fluid" alt="UU" width="200"></a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
@@ -642,8 +856,8 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
     </div>
   </div>
 </footer>
-<script src="./js/bootstrapify.js"></script>
-<script src="./js/webex.js"></script>
+<script src="../../js/bootstrapify.js"></script>
+<script src="../../js/webex.js"></script>
 
 
 

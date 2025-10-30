@@ -30,21 +30,23 @@ website:
     contents:
       - href: index.qmd
         text: "Overview"
-      - section: tutorials/first_tutorial/index.qmd
-        text: "First Tutorial"
+      - section: tutorials/frequency-tables-baseR/index.qmd
+        text: "Frequency Tables"
         contents:
-        - href: tutorials/first_tutorial/topic1.qmd
-        - href: tutorials/first_tutorial/topic2.qmd
-        - href: tutorials/first_tutorial/topic3.qmd
-        - href: quizzes/first_tutorial/index.qmd
-          text: "Knowledge Quiz"
-      - section: tutorials/second_tutorial/index.qmd
-        text: "Second Tutorial"
-        contents:
-          - href: tutorials/second_tutorial/topic1.qmd
-          - href: tutorials/second_tutorial/topic2.qmd
-          - href: quizzes/second_tutorial/index.qmd
+          - href: tutorials/frequency-tables-baseR/topic1.qmd
+          - href: tutorials/frequency-tables-baseR/topic2.qmd
+          - href: quizzes/frequency-tables-baseR/index.qmd
             text: "Knowledge Quiz"
+      - section: tutorials/summarizing-data-baseR/index.qmd
+        text: "Summarizing Data"
+        contents:
+        - href: tutorials/summarizing-data-baseR/topic1.qmd
+        - href: tutorials/summarizing-data-baseR/topic2.qmd
+        - href: tutorials/summarizing-data-baseR/topic3.qmd
+        - href: quizzes/summarizing-data-baseR/index.qmd
+          text: "Knowledge Quiz"
+
+
       - href: conclusion.qmd
 
   page-footer:

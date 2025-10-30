@@ -1,5 +1,5 @@
 ---
-title: "Module Template"
+title: "Descriptive Statistics"
 page-navigation: false
 format:
   html: 
@@ -10,33 +10,33 @@ format:
 source(here::here("R", "buttons.R"))
 ```
 
-Welcome to our template module. Every module comprises a series of topical *tutorials*, such as the three linked below.
+Welcome to the *Descriptive Statistics* module! In this module, you will learn about: 
 
-1. [First Topic](/tutorials/first_tutorial/index.qmd)
-1. [Second Topic](/tutorials/second_tutorial/index.qmd)
+1. [Frequency tables](/tutorials/frequency-tables-baseR/index.qmd)
+1. [Summarizing data](/tutorials/summarizing-data-baseR/index.qmd) 
 
-Each tutorial will comprise a series of interactive lessons with practice problems embedded throughout. Each tutorial
-section should be wrapped up with a knowledge quiz.
+Each tutorial will comprise a series of interactive lessons with practice problems embedded throughout. Each tutorial section is wrapped up with a knowledge quiz.
 
 ## Learning Goals
 
 After completing this module, you will be able to:
 
-### Tutorial 1
-
-1. A thing you should learn from Tutorial 1.
-1. Another thing you should learn from Tutorial 1.
-1. One more thing you should learn From Tutorial 1.
-
-### Tutorial 2
+### Frequency Tables - Base R
 
 1. A thing you should learn from Tutorial 2.
 1. Another thing you should learn from Tutorial 2.
+
+### Summarizing Data - Base R
+
+1. Load, inspect, structure ( head, str), summary of all (summary())
+1. Summary statistics: mean, median, var, sd, min, max, range
+1. Apply over all numeric columns, sapply
+1. Accounting for missing values in your data (na.rm)
 
 Click the button below to get started with the first tutorial.
 
 ```{r}
 #| echo: false
 #| results: asis
-begin_button("/tutorials/first_tutorial/index.html")
+begin_button("/tutorials/frequency-tables-baseR/index.html")
 ```

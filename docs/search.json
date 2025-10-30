@@ -1,179 +1,10 @@
 [
   {
-    "objectID": "quizzes/first_tutorial/questions/arithmetic2.html",
-    "href": "quizzes/first_tutorial/questions/arithmetic2.html",
-    "title": "Question",
-    "section": "",
-    "text": "Question\nWhat is the value of \\(x\\) in the following equation?\n\\[\nx = \\frac{3 + 1}{5}\n\\]\nRound your answer to two decimal places.\n\n\nSolution\nAfter rounding, we get 0.80.\n\n\nMeta-information\nexname: Arithmetic extype: num exsolution: 0.80 extol: 0.01\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "quizzes/first_tutorial/questions/default_arguments2.html",
-    "href": "quizzes/first_tutorial/questions/default_arguments2.html",
-    "title": "Question",
-    "section": "",
-    "text": "Use the following help file excerpt to answer the question below.\n\n\n\n\n\n\n\n\ncor\nR Documentation\n\n\n\n\n\n\n\n\n\nvar(x, y = NULL, na.rm = FALSE, use)\n\ncov(x, y = NULL, use = \"everything\",\n    method = c(\"pearson\", \"kendall\", \"spearman\"))\n\ncor(x, y = NULL, use = \"everything\",\n    method = c(\"pearson\", \"kendall\", \"spearman\"))\n\ncov2cor(V)\n\n\n\n\n\n\n\n\nWhat is the default value for the use argument of the cor() function?\n\n\n\n\"everything\"\n\"Everything\n\"spearman\"\n\"pearson\"\n\"kendall\"\nc(\"pearson\", \"spearman\", \"kendall\")\nNULL\nmethod\ny\nx\nThe use argument does not have a defined default value."
-  },
-  {
-    "objectID": "quizzes/first_tutorial/questions/default_arguments2.html#answerlist",
-    "href": "quizzes/first_tutorial/questions/default_arguments2.html#answerlist",
-    "title": "Question",
-    "section": "",
-    "text": "\"everything\"\n\"Everything\n\"spearman\"\n\"pearson\"\n\"kendall\"\nc(\"pearson\", \"spearman\", \"kendall\")\nNULL\nmethod\ny\nx\nThe use argument does not have a defined default value."
-  },
-  {
-    "objectID": "quizzes/first_tutorial/questions/default_arguments2.html#answerlist-1",
-    "href": "quizzes/first_tutorial/questions/default_arguments2.html#answerlist-1",
-    "title": "Question",
-    "section": "Answerlist",
-    "text": "Answerlist\n\nCorrect\nWrong: The “E” should be lowercase\nWrong: This is one of the possible methods\nWrong: This is one of the possible methods\nWrong: This is one of the possible methods\nWrong: These are all of the possible methods\nWrong: This is the default value for y\nWrong: This is an argument name\nWrong: This is an argument name\nWrong: This is an argument name\nWrong: There is a default value defined for use."
-  },
-  {
-    "objectID": "quizzes/second_tutorial/questions/default_arguments1.html",
-    "href": "quizzes/second_tutorial/questions/default_arguments1.html",
-    "title": "Question",
-    "section": "",
-    "text": "Which section of an R package help file would you reference to learn the default values for a function’s arguments.\n\n\n\nDescription\nUsage\nArguments\nDetails\nValue\nSee Also\nExamples"
-  },
-  {
-    "objectID": "quizzes/second_tutorial/questions/default_arguments1.html#answerlist",
-    "href": "quizzes/second_tutorial/questions/default_arguments1.html#answerlist",
-    "title": "Question",
-    "section": "",
-    "text": "Description\nUsage\nArguments\nDetails\nValue\nSee Also\nExamples"
-  },
-  {
-    "objectID": "quizzes/second_tutorial/index.html",
-    "href": "quizzes/second_tutorial/index.html",
-    "title": "Knowledge Quiz: Tutorial 2",
-    "section": "",
-    "text": "Note\n\n\n\n\nClick the check-mark button to check your answer.\nClick the question-mark button to see an explanation of the solution.\n\n\n\n\n\n\nYes or No?\n\nYesYesNoYesNo\n\n\n\n\nWrong\nWrong\nWrong\nCorrect\nWrong\n\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "Second Tutorial",
-      "Knowledge Quiz"
-    ]
-  },
-  {
-    "objectID": "tutorials/first_tutorial/topic1.html",
-    "href": "tutorials/first_tutorial/topic1.html",
-    "title": "Code Blocks",
-    "section": "",
-    "text": "This is the first topic file for Tutorial 1.",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "First Tutorial",
-      "Code Blocks"
-    ]
-  },
-  {
-    "objectID": "tutorials/first_tutorial/topic1.html#code-blocks",
-    "href": "tutorials/first_tutorial/topic1.html#code-blocks",
-    "title": "Code Blocks",
-    "section": "Code Blocks",
-    "text": "Code Blocks\nUse knitr code blocks to include non-interactive R code.\n\n## Add 2 and 2\n2 + 2\n\n[1] 4\n\n## Divide 225 by 15 and print the result\n(x &lt;- 225 / 15)\n\n[1] 15\n\n\nUse quarto-webr code blocks for interactive R exercises.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nCode Block Environments\nA single execution environment is shared across code blocks of the same type.\n\nAll the knitr code blocks in a QMD file will share an evaluation environment.\nLikewise for the quarto-webr code blocks\n\n\nx^2\n\n[1] 225\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nknitr and quarto-webr code blocks to not share the same environment, though.\n\nresid(fit)\n\nError: object 'fit' not found\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nIf you want to share objects across code chunk types (e.g., to pose a practice problem using objects created in a knitr chunk), you can regenerate the required objects using a hidden code chunk of the appropriate type.\n\nDon’t forget to set an appropriate seed, if you’re trying to regenerate a stochastic object.\n\n\n\nInline Code\nUse knitr inline code chunks to embed R output in text blocks.\n\nE.g., R says the squareroot of 2 is 1.4142136.",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "First Tutorial",
-      "Code Blocks"
-    ]
-  },
-  {
-    "objectID": "tutorials/first_tutorial/topic3.html",
-    "href": "tutorials/first_tutorial/topic3.html",
-    "title": "Images & Figures",
-    "section": "",
-    "text": "This is the third topic file for Tutorial 1.\narrange() orders the rows of a data frame by the values of selected columns.\nUnlike other dplyr verbs, arrange() largely ignores grouping; you need to explicitly mention grouping\n    variables (or use  .by_group = TRUE) in order to group by them, and functions of variables are\n    evaluated once per data frame, not once per group.\nUnlike base sorting with sort(), NA are:\nAn object of the same type as .data. The output has the following properties:\nThis function is a generic, which means that packages can provide implementations (methods) for\n    other classes. See the documentation of individual methods for extra arguments and differences in behaviour.\nThe following methods are currently available in loaded packages: no methods found.\nOther single table verbs: \n    filter(),\n    mutate(),\n    reframe(),\n    rename(),\n    select(),\n    slice(),\n    summarise()",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "First Tutorial",
-      "Images & Figures"
-    ]
-  },
-  {
-    "objectID": "tutorials/first_tutorial/topic3.html#assets-directory",
-    "href": "tutorials/first_tutorial/topic3.html#assets-directory",
-    "title": "Images & Figures",
-    "section": "Assets Directory",
-    "text": "Assets Directory\nAll pre-rendered assets (i.e., files that will not rendered/compiled into some other format) that you want to include in your website should live somewhere in the “/assets/” directory.\n\n/assets/images/: Image files\n/assets/figures/: Scientific figures (e.g., graphs, plots, diagrams)\n/assets/docs/: Pre-rendered documents (e.g., HTML)",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "First Tutorial",
-      "Images & Figures"
-    ]
-  },
-  {
-    "objectID": "tutorials/first_tutorial/topic3.html#images",
-    "href": "tutorials/first_tutorial/topic3.html#images",
-    "title": "Images & Figures",
-    "section": "Images",
-    "text": "Images\n\n\n\nA Nice Mountain View",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "First Tutorial",
-      "Images & Figures"
-    ]
-  },
-  {
-    "objectID": "tutorials/first_tutorial/topic3.html#figures",
-    "href": "tutorials/first_tutorial/topic3.html#figures",
-    "title": "Images & Figures",
-    "section": "Figures",
-    "text": "Figures\n\n\n\nSerial Multiple Mediation",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "First Tutorial",
-      "Images & Figures"
-    ]
-  },
-  {
-    "objectID": "tutorials/first_tutorial/topic3.html#documents",
-    "href": "tutorials/first_tutorial/topic3.html#documents",
-    "title": "Images & Figures",
-    "section": "Documents",
-    "text": "Documents\nInclude a pre-rendered HTML files as part of this webpage.\nR: Order rows using column values\n  \n  \n  \n  \n  \n  \n\n\n\n  \n\n\n\narrange {dplyr}\nR Documentation\n\n\n\n\n\n  Order rows using column values\n\n  Description\n\n  \n  \n\n  Usage\n\n  arrange(.data, ..., .by_group = FALSE)\n\n## S3 method for class 'data.frame'\narrange(.data, ..., .by_group = FALSE, .locale = NULL)\n\n  Arguments\n\n  \n\n\n\n\n\n\n\n.data\nA data frame, data frame extension (e.g. a tibble), or a lazy data frame (e.g. from dbplyr or dtplyr). See Methods, below, for more details.\n\n\n...\n&lt;data-masking&gt; Variables, or functions of variables. Use desc() to sort a variable in descending order.\n\n\n.by_group\nIf TRUE, will sort first by grouping variable. Applies togrouped data frames only.\n\n\n.locale\nThe locale to sort character vectors in.\n\nIf NULL, the default, uses the \"C\" locale unless the dplyr.legacy_locale global option escape hatch is active. See the dplyr-locale help page for more details.\nIf a single string from stringi::stri_locale_list() is supplied, then this will be used as the locale to sort with. For example, \"en\" will sort with the American English locale. This requires the stringi package.\nIf \"C\" is supplied, then character vectors will always be sorted in the C locale. This does not require stringi and is often much faster than supplying a locale identifier.\n\nThe C locale is not the same as English locales, such as \"en\", particularly when it comes to data containing a mix of upper and lower case letters. This is explained in more detail on the locale help page under the ⁠Default locale⁠ section.\n\n\n\n\n\n  Details\n\n  Missing values\n\n  \n\n  \n    \n       always sorted to the end for local data, even when wrapped with desc().\n    \n    \n       treated differently for remote data, depending on the backend.\n    \n  \n\n  Value\n\n  \n\n  \n    \n       All rows appear in the output, but (usually) in a different place.\n    \n    \n       Columns are not modified.\n    \n    \n       Groups are not modified.\n    \n    \n       Data frame attributes are preserved.\n    \n  \n\n  Methods\n\n  \n  \n\n  See Also\n\n  \n\n  Examples\n\n  arrange(mtcars, cyl, disp)\narrange(mtcars, desc(disp))\n\n# grouped arrange ignores groups\nby_cyl &lt;- mtcars %&gt;% group_by(cyl)\nby_cyl %&gt;% arrange(desc(wt))\n# Unless you specifically ask:\nby_cyl %&gt;% arrange(desc(wt), .by_group = TRUE)\n\n# use embracing when wrapping in a function;\n# see ?rlang::args_data_masking for more details\ntidy_eval_arrange &lt;- function(.data, var) {\n  .data %&gt;%\n    arrange({{ var }})\n}\ntidy_eval_arrange(mtcars, mpg)\n\n# Use `across()` or `pick()` to select columns with tidy-select\niris %&gt;% arrange(pick(starts_with(\"Sepal\")))\niris %&gt;% arrange(across(starts_with(\"Sepal\"), desc))",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "First Tutorial",
-      "Images & Figures"
-    ]
-  },
-  {
-    "objectID": "tutorials/second_tutorial/topic1.html",
-    "href": "tutorials/second_tutorial/topic1.html",
-    "title": "First Topic",
-    "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "Second Tutorial",
-      "First Topic"
-    ]
-  },
-  {
-    "objectID": "tutorials/second_tutorial/topic1.html#blah",
-    "href": "tutorials/second_tutorial/topic1.html#blah",
-    "title": "First Topic",
-    "section": "Blah",
-    "text": "Blah\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\nNunc ac dignissim magna. Vestibulum vitae egestas elit. Proin feugiat leo quis ante condimentum, eu ornare mauris feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris cursus laoreet ex, dignissim bibendum est posuere iaculis. Suspendisse et maximus elit. In fringilla gravida ornare. Aenean id lectus pulvinar, sagittis felis nec, rutrum risus. Nam vel neque eu arcu blandit fringilla et in quam. Aliquam luctus est sit amet vestibulum eleifend. Phasellus elementum sagittis molestie. Proin tempor lorem arcu, at condimentum purus volutpat eu. Fusce et pellentesque ligula. Pellentesque id tellus at erat luctus fringilla. Suspendisse potenti.",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "Second Tutorial",
-      "First Topic"
-    ]
-  },
-  {
-    "objectID": "in_progress.html",
-    "href": "in_progress.html",
-    "title": "In Progress",
-    "section": "",
-    "text": "Sorry, we’re still building the page you’ve requested.\nIt’s almost done…really.\nWe’re just working through a few minor issues…\n\n\n\nImage Source"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Module Template",
+    "title": "Descriptive Statistics",
     "section": "",
-    "text": "Welcome to our template module. Every module comprises a series of topical tutorials, such as the three linked below.\nEach tutorial will comprise a series of interactive lessons with practice problems embedded throughout. Each tutorial section should be wrapped up with a knowledge quiz.",
+    "text": "Welcome to the Descriptive Statistics module! In this module, you will learn about:\nEach tutorial will comprise a series of interactive lessons with practice problems embedded throughout. Each tutorial section is wrapped up with a knowledge quiz.",
     "crumbs": [
       "Open-Stat-Prog",
       "Overview"
@@ -182,180 +13,117 @@
   {
     "objectID": "index.html#learning-goals",
     "href": "index.html#learning-goals",
-    "title": "Module Template",
+    "title": "Descriptive Statistics",
     "section": "Learning Goals",
-    "text": "Learning Goals\nAfter completing this module, you will be able to:\n\nTutorial 1\n\nA thing you should learn from Tutorial 1.\nAnother thing you should learn from Tutorial 1.\nOne more thing you should learn From Tutorial 1.\n\n\n\nTutorial 2\n\nA thing you should learn from Tutorial 2.\nAnother thing you should learn from Tutorial 2.\n\nClick the button below to get started with the first tutorial.\n\n\n Begin Tutorial",
+    "text": "Learning Goals\nAfter completing this module, you will be able to:\n\nFrequency Tables - Base R\n\nA thing you should learn from Tutorial 2.\nAnother thing you should learn from Tutorial 2.\n\n\n\nSummarizing Data - Base R\n\nLoad, inspect, structure ( head, str), summary of all (summary())\nSummary statistics: mean, median, var, sd, min, max, range\nApply over all numeric columns, sapply\nAccounting for missing values in your data (na.rm)\n\nClick the button below to get started with the first tutorial.\n\n\n Begin Tutorial",
     "crumbs": [
       "Open-Stat-Prog",
       "Overview"
     ]
   },
   {
-    "objectID": "conclusion.html",
-    "href": "conclusion.html",
-    "title": "Conclusion",
+    "objectID": "quizzes/frequency-tables-baseR/questions/default_arguments1.html",
+    "href": "quizzes/frequency-tables-baseR/questions/default_arguments1.html",
+    "title": "Question",
     "section": "",
-    "text": "Use this page to provide some kind of brief wrap-up.",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "Conclusion"
-    ]
+    "text": "Which section of an R package help file would you reference to learn the default values for a function’s arguments.\n\n\n\nDescription\nUsage\nArguments\nDetails\nValue\nSee Also\nExamples"
   },
   {
-    "objectID": "conclusion.html#next-steps",
-    "href": "conclusion.html#next-steps",
-    "title": "Conclusion",
-    "section": "Next Steps",
-    "text": "Next Steps\nIf your module feeds naturally into another, link that module through the button below as a suggestion for further study.\n\nHere, we’re linking to the First Steps module.\n\n\n\n Next Module",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "Conclusion"
-    ]
-  },
-  {
-    "objectID": "tutorials/second_tutorial/topic2.html",
-    "href": "tutorials/second_tutorial/topic2.html",
-    "title": "Second Topic",
+    "objectID": "quizzes/frequency-tables-baseR/questions/default_arguments1.html#answerlist",
+    "href": "quizzes/frequency-tables-baseR/questions/default_arguments1.html#answerlist",
+    "title": "Question",
     "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\nNunc ac dignissim magna. Vestibulum vitae egestas elit. Proin feugiat leo quis ante condimentum, eu ornare mauris feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris cursus laoreet ex, dignissim bibendum est posuere iaculis. Suspendisse et maximus elit. In fringilla gravida ornare. Aenean id lectus pulvinar, sagittis felis nec, rutrum risus. Nam vel neque eu arcu blandit fringilla et in quam. Aliquam luctus est sit amet vestibulum eleifend. Phasellus elementum sagittis molestie. Proin tempor lorem arcu, at condimentum purus volutpat eu. Fusce et pellentesque ligula. Pellentesque id tellus at erat luctus fringilla. Suspendisse potenti.\n\n\n\n Back to top",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "Second Tutorial",
-      "Second Topic"
-    ]
+    "text": "Description\nUsage\nArguments\nDetails\nValue\nSee Also\nExamples"
   },
   {
-    "objectID": "tutorials/second_tutorial/index.html",
-    "href": "tutorials/second_tutorial/index.html",
-    "title": "Second Tutorial",
+    "objectID": "quizzes/frequency-tables-baseR/index.html",
+    "href": "quizzes/frequency-tables-baseR/index.html",
+    "title": "Knowledge Quiz: Tutorial 2",
     "section": "",
-    "text": "This is the landing page for the second tutorial.",
+    "text": "Note\n\n\n\n\nClick the check-mark button to check your answer.\nClick the question-mark button to see an explanation of the solution.\n\n\n\n\n\n\nYes or No?\n\nYesNoNoYesYes\n\n\n\n\nCorrect\nWrong\nWrong\nWrong\nWrong\n\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Open-Stat-Prog",
-      "Second Tutorial"
+      "Frequency Tables",
+      "Knowledge Quiz"
     ]
   },
   {
-    "objectID": "tutorials/second_tutorial/index.html#blah",
-    "href": "tutorials/second_tutorial/index.html#blah",
-    "title": "Second Tutorial",
-    "section": "Blah",
-    "text": "Blah\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nBlah, Blah\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\nNunc ac dignissim magna. Vestibulum vitae egestas elit. Proin feugiat leo quis ante condimentum, eu ornare mauris feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris cursus laoreet ex, dignissim bibendum est posuere iaculis. Suspendisse et maximus elit. In fringilla gravida ornare. Aenean id lectus pulvinar, sagittis felis nec, rutrum risus. Nam vel neque eu arcu blandit fringilla et in quam. Aliquam luctus est sit amet vestibulum eleifend. Phasellus elementum sagittis molestie. Proin tempor lorem arcu, at condimentum purus volutpat eu. Fusce et pellentesque ligula. Pellentesque id tellus at erat luctus fringilla. Suspendisse potenti.",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "Second Tutorial"
-    ]
-  },
-  {
-    "objectID": "tutorials/first_tutorial/topic2.html",
-    "href": "tutorials/first_tutorial/topic2.html",
-    "title": "Divs & Callouts",
-    "section": "",
-    "text": "This is the second topic file for Tutorial 1.",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "First Tutorial",
-      "Divs & Callouts"
-    ]
-  },
-  {
-    "objectID": "tutorials/first_tutorial/topic2.html#callout-blocks",
-    "href": "tutorials/first_tutorial/topic2.html#callout-blocks",
-    "title": "Divs & Callouts",
-    "section": "Callout Blocks",
-    "text": "Callout Blocks\nUse callout blocks to highlight special information.\n\n\n\n\n\n\nNote Title\n\n\n\nSomething noteworthy.\n\n\n\n\n\n\n\n\nTip Title\n\n\n\nHere’s a tip for ya…\n\n\n\n\n\n\n\n\nImportant Title\n\n\n\nThis is very important!\n\n\n\n\n\n\n\n\nWarning Title\n\n\n\nYou’ve been warned.\n\n\n\n\n\n\n\n\nCaution Title\n\n\n\nProceed with caution.\n\n\n\nCustom Callouts\nThis project uses the quarto-custom-callout extension to provide some bespoke callout blocks. This template already defines four such blocks.\nA reading callout to highlight relevant, recommended literature.\n\nI.e., These sources would be the required reading in a classroom context.\n\n\n\n\n\n\n\nReading\n\n\n\nR4DS 2: Workflow Basics\n\n\nA reading-advanced callout to highlight relevant, but technically challanging, literature.\n\nI.e., These sources would be supplementary reference materials but not required reading in a classroom context.\n\n\n\n\n\n\n\nAdvanced Reading\n\n\n\nAdvanced R 2.2: Binding Basics\n\n\nA resource callout to highlight related external resources.\n\n\n\n\n\n\nExternal Resources\n\n\n\nFor a different take on these ideas, check out Andrew Heiss’ R Primers tutorial on the topic\n\nR Primers: Programming Basics\n\n\n\n\n\nPractice Callouts\nThe custom practice callout is reserved for inline practice problems.\n\nThe panel-tabset div nested within the practice div creates a set of tabs to organize the exercise components.\nEach Level 2 heading inside the panel-tabset div defines a new tab.\n\nIn the examples below, the tab titles are specified through quarto shortcode variables.\nThese variables are defined in the _variables.yml metadata file.\n\n\n\n\n\n\n\n\nExample Code Exercise\n\n\n\n\nRegress Petal.Width onto Species using the iris dataset.\nCreate a normal Q-Q plot of the residuals.\n\n\n Interactive Editor Hint Solution\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nRemember what happens when you call the Base R plot() function on a fitted lm object.\n\n\n\nFirst, we’ll use the lm() function to estimate the model.\n\n\nfit1 &lt;- lm(Petal.Width ~ Species, data = iris)\n\n\nThen, we’ll use the default plotting method for lm objects to create the Q-Q plot.\n\n\nplot(fit1, 2)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample Theory Question\n\n\n\n\n Question Solution\n\n\nWhat is the answer to life, the universe, and everything?\n\n\n42",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "First Tutorial",
-      "Divs & Callouts"
-    ]
-  },
-  {
-    "objectID": "tutorials/first_tutorial/topic2.html#using-the-website-margin",
-    "href": "tutorials/first_tutorial/topic2.html#using-the-website-margin",
-    "title": "Divs & Callouts",
-    "section": "Using the Website Margin",
-    "text": "Using the Website Margin\nIn the previous section, all callout blocks are placed in the website body. In most cases, however, callout blocks are better placed in the website margin.\n\nPlacing supporting elements like links, callouts, and references in the margin streamlines the main body content while keeping the supporting information near the relevant main body content.\n\nTo place content in the website margine, we use the column-margin div.\n\nExample\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida bibendum ex, quis cursus risus vestibulum vel. Aliquam hendrerit in enim in suscipit. Nunc at fringilla velit, a faucibus tellus. Etiam mollis, massa id finibus volutpat, tellus nulla egestas mauris, id tempus sem ipsum quis neque. Pellentesque sodales pharetra nulla id sodales. Vestibulum tincidunt orci in sem malesuada, in malesuada odio lacinia. Integer sodales, quam eu imperdiet commodo, est ipsum interdum risus, et volutpat mi justo blandit est. Donec non nisl lobortis, vestibulum lorem non, iaculis felis. Curabitur tempus sagittis volutpat. Nam dignissim eros ac gravida ultricies. Curabitur velit nisl, cursus in lobortis id, porttitor in massa. Vestibulum commodo, turpis vitae laoreet efficitur, diam sem consectetur felis, non pulvinar magna elit id justo. Duis tincidunt id massa eget lacinia.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\n\nNam vulputate tellus metus, id pretium nisi congue eu. Ut ornare, sem id cursus suscipit, dui purus efficitur urna, id auctor magna diam quis lorem. Cras venenatis id dui at rhoncus. Donec consequat nulla vel arcu vestibulum, ac posuere leo venenatis. Praesent fermentum est ac lorem condimentum, gravida volutpat velit sagittis. Cras ac egestas nisi. Duis eget luctus quam. Donec consectetur neque nec egestas ultricies.\n\n\n\n\n\n\n\n\n\n\nExternal Resources\n\n\n\nWikipedia: Central Limit Theorem",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "First Tutorial",
-      "Divs & Callouts"
-    ]
-  },
-  {
-    "objectID": "tutorials/first_tutorial/index.html",
-    "href": "tutorials/first_tutorial/index.html",
-    "title": "First Tutorial",
-    "section": "",
-    "text": "This is the landing page for the first tutorial. Each tutorial section should begin with a landing page named “index.qmd”.",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "First Tutorial"
-    ]
-  },
-  {
-    "objectID": "tutorials/first_tutorial/index.html#headings",
-    "href": "tutorials/first_tutorial/index.html#headings",
-    "title": "First Tutorial",
-    "section": "Headings",
-    "text": "Headings\nThe title field of each QMD source file is typeset as a Level 1 heading, so use Level-2 headings as the highest heading level in your markdown.",
-    "crumbs": [
-      "Open-Stat-Prog",
-      "First Tutorial"
-    ]
-  },
-  {
-    "objectID": "quizzes/second_tutorial/questions/bad_question.html",
-    "href": "quizzes/second_tutorial/questions/bad_question.html",
+    "objectID": "quizzes/frequency-tables-baseR/questions/bad_question.html",
+    "href": "quizzes/frequency-tables-baseR/questions/bad_question.html",
     "title": "Question",
     "section": "",
     "text": "Yes or No?\n\n\n\nYes\nYes\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo"
   },
   {
-    "objectID": "quizzes/second_tutorial/questions/bad_question.html#answerlist",
-    "href": "quizzes/second_tutorial/questions/bad_question.html#answerlist",
+    "objectID": "quizzes/frequency-tables-baseR/questions/bad_question.html#answerlist",
+    "href": "quizzes/frequency-tables-baseR/questions/bad_question.html#answerlist",
     "title": "Question",
     "section": "",
     "text": "Yes\nYes\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo"
   },
   {
-    "objectID": "quizzes/second_tutorial/questions/bad_question.html#answerlist-1",
-    "href": "quizzes/second_tutorial/questions/bad_question.html#answerlist-1",
+    "objectID": "quizzes/frequency-tables-baseR/questions/bad_question.html#answerlist-1",
+    "href": "quizzes/frequency-tables-baseR/questions/bad_question.html#answerlist-1",
     "title": "Question",
     "section": "Answerlist",
     "text": "Answerlist\n\nCorrect\nWrong\nWrong\nWrong\nWrong\nWrong\nWrong\nWrong\nWrong\nWrong"
   },
   {
-    "objectID": "quizzes/first_tutorial/index.html",
-    "href": "quizzes/first_tutorial/index.html",
-    "title": "Knowledge Quiz: Tutorial 1",
+    "objectID": "tutorials/frequency-tables-baseR/index.html",
+    "href": "tutorials/frequency-tables-baseR/index.html",
+    "title": "Frequency Tables",
     "section": "",
-    "text": "Note\n\n\n\n\nClick the check-mark button to check your answer.\nClick the question-mark button to see an explanation of the solution.\n\n\n\n\n\n\nWhich of the following expressions will return TRUE?\n\n(8 - 1) == 7 & 7 &gt;= (14 / 2)TRUE!TRUE!(6 &gt; 7)(8 + 6) &lt; (8 * 6)TRUE & FALSE\n\n\n\n\nTRUE: 7 is equal to 7, and 7 is greater than or equal to 7\nTRUE: Trivially\nFALSE: Trivial negation\nTRUE: 6 is not strictly greater than 7, and that result is negated\nTRUE: 14 is strictly less than 48\nFALSE: Trivially\n\n\n\n\n\nWhat is the value of \\(x\\) in the following equation?\n\\[\nx = \\frac{3 + 2}{5}\n\\]\nRound your answer to two decimal places.\n\n\n\nAfter rounding, we get 1.00.\n\n\n\n\nUse the following help file excerpt to answer the question below.\n\n\n\n\n\n\n\n\ncor\nR Documentation\n\n\n\n\n\nCorrelation, Variance and Covariance (Matrices)\n\nUsage\n\nvar(x, y = NULL, na.rm = FALSE, use)\n\ncov(x, y = NULL, use = \"everything\",\n    method = c(\"pearson\", \"kendall\", \"spearman\"))\n\ncor(x, y = NULL, use = \"everything\",\n    method = c(\"pearson\", \"kendall\", \"spearman\"))\n\ncov2cor(V)\n\n\n\n\n\n\n\n\nWhat is the default value for the use argument of the cor() function?\n\nThe use argument does not have a defined default value.\"spearman\"\"everything\"\"Everythingmethod\n\n\n\nThe default value for the use argument is \"everything\".\n\nWrong: There is a default value defined for use.\nWrong: This is one of the possible methods\nCorrect\nWrong: The “E” should be lowercase\nWrong: This is an argument name\n\n\n\n\n\n\n\n Back to top",
+    "text": "In this tutorial, you will learn:\n\nHow to create a frequency table in R\n\nWe assume that you already know:\n\nWhat measurement levels are\nHow to open a dataset (.csv) in R\nWhat a frequency table is\n\n\n\n\n Back to top",
     "crumbs": [
       "Open-Stat-Prog",
-      "First Tutorial",
-      "Knowledge Quiz"
+      "Frequency Tables"
     ]
   },
   {
-    "objectID": "quizzes/first_tutorial/questions/logical.html",
-    "href": "quizzes/first_tutorial/questions/logical.html",
-    "title": "Question",
-    "section": "",
-    "text": "Which of the following expressions will return TRUE?\n\n\n\n\"foo\" != \"bar\"\n(8 + 6) &lt; (8 * 6)\n(8 - 1) == 7 & 7 &gt;= (14 / 2)\n\"alice\" == \"bob\" | \"alice\" == \"alice\"\n!(6 &gt; 7)\nTRUE\nFALSE\n\"foo\" == \"bar\"\n(8 - 1) == 7 & 7 &gt; (14 / 2)\n\"alice\" == \"bob\" | \"alice\" != \"alice\"\n\"alice\" == \"bob\" & \"alice\" == \"alice\"\n!TRUE\nTRUE & FALSE"
+    "objectID": "tutorials/frequency-tables-baseR/index.html#blah",
+    "href": "tutorials/frequency-tables-baseR/index.html#blah",
+    "title": "Second Tutorial",
+    "section": "Blah",
+    "text": "Blah\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nBlah, Blah\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\nNunc ac dignissim magna. Vestibulum vitae egestas elit. Proin feugiat leo quis ante condimentum, eu ornare mauris feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris cursus laoreet ex, dignissim bibendum est posuere iaculis. Suspendisse et maximus elit. In fringilla gravida ornare. Aenean id lectus pulvinar, sagittis felis nec, rutrum risus. Nam vel neque eu arcu blandit fringilla et in quam. Aliquam luctus est sit amet vestibulum eleifend. Phasellus elementum sagittis molestie. Proin tempor lorem arcu, at condimentum purus volutpat eu. Fusce et pellentesque ligula. Pellentesque id tellus at erat luctus fringilla. Suspendisse potenti.",
+    "crumbs": [
+      "Open-Stat-Prog",
+      "Frequency Tables"
+    ]
   },
   {
-    "objectID": "quizzes/first_tutorial/questions/logical.html#answerlist",
-    "href": "quizzes/first_tutorial/questions/logical.html#answerlist",
-    "title": "Question",
+    "objectID": "tutorials/frequency-tables-baseR/topic1.html",
+    "href": "tutorials/frequency-tables-baseR/topic1.html",
+    "title": "First Topic",
     "section": "",
-    "text": "\"foo\" != \"bar\"\n(8 + 6) &lt; (8 * 6)\n(8 - 1) == 7 & 7 &gt;= (14 / 2)\n\"alice\" == \"bob\" | \"alice\" == \"alice\"\n!(6 &gt; 7)\nTRUE\nFALSE\n\"foo\" == \"bar\"\n(8 - 1) == 7 & 7 &gt; (14 / 2)\n\"alice\" == \"bob\" | \"alice\" != \"alice\"\n\"alice\" == \"bob\" & \"alice\" == \"alice\"\n!TRUE\nTRUE & FALSE"
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "crumbs": [
+      "Open-Stat-Prog",
+      "Frequency Tables",
+      "First Topic"
+    ]
   },
   {
-    "objectID": "quizzes/first_tutorial/questions/logical.html#answerlist-1",
-    "href": "quizzes/first_tutorial/questions/logical.html#answerlist-1",
-    "title": "Question",
-    "section": "Answerlist",
-    "text": "Answerlist\n\nTRUE: “foo” is not equal to “bar”\nTRUE: 14 is strictly less than 48\nTRUE: 7 is equal to 7, and 7 is greater than or equal to 7\nTRUE: “alice” is not equal to “bob”, but “alice is equal to”alice”\nTRUE: 6 is not strictly greater than 7, and that result is negated\nTRUE: Trivially\nFALSE: Trivially\nFALSE: “foo” is not equal to “bar”\nFALSE: 7 is equal to 7, but 7 is not strictly greater than 7\nFALSE: “alice” is not equal to “bob”, and “alice” is equal to “alice”\nFALSE: “alice” is not equal to “bob”\nFALSE: Trivial negation\nFALSE: Trivially"
+    "objectID": "tutorials/frequency-tables-baseR/topic1.html#blah",
+    "href": "tutorials/frequency-tables-baseR/topic1.html#blah",
+    "title": "First Topic",
+    "section": "Blah",
+    "text": "Blah\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\nNunc ac dignissim magna. Vestibulum vitae egestas elit. Proin feugiat leo quis ante condimentum, eu ornare mauris feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris cursus laoreet ex, dignissim bibendum est posuere iaculis. Suspendisse et maximus elit. In fringilla gravida ornare. Aenean id lectus pulvinar, sagittis felis nec, rutrum risus. Nam vel neque eu arcu blandit fringilla et in quam. Aliquam luctus est sit amet vestibulum eleifend. Phasellus elementum sagittis molestie. Proin tempor lorem arcu, at condimentum purus volutpat eu. Fusce et pellentesque ligula. Pellentesque id tellus at erat luctus fringilla. Suspendisse potenti.",
+    "crumbs": [
+      "Open-Stat-Prog",
+      "Frequency Tables",
+      "First Topic"
+    ]
+  },
+  {
+    "objectID": "tutorials/frequency-tables-baseR/topic2.html",
+    "href": "tutorials/frequency-tables-baseR/topic2.html",
+    "title": "Second Topic",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\nNunc ac dignissim magna. Vestibulum vitae egestas elit. Proin feugiat leo quis ante condimentum, eu ornare mauris feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris cursus laoreet ex, dignissim bibendum est posuere iaculis. Suspendisse et maximus elit. In fringilla gravida ornare. Aenean id lectus pulvinar, sagittis felis nec, rutrum risus. Nam vel neque eu arcu blandit fringilla et in quam. Aliquam luctus est sit amet vestibulum eleifend. Phasellus elementum sagittis molestie. Proin tempor lorem arcu, at condimentum purus volutpat eu. Fusce et pellentesque ligula. Pellentesque id tellus at erat luctus fringilla. Suspendisse potenti.\n\n\n\n Back to top",
+    "crumbs": [
+      "Open-Stat-Prog",
+      "Frequency Tables",
+      "Second Topic"
+    ]
   }
 ]

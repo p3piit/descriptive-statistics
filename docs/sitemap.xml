@@ -1,71 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/quizzes/first_tutorial/questions/arithmetic2.html</loc>
-    <lastmod>2025-10-09T08:49:48.279Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/quizzes/first_tutorial/questions/default_arguments2.html</loc>
-    <lastmod>2025-10-09T08:49:48.280Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/quizzes/second_tutorial/questions/default_arguments1.html</loc>
-    <lastmod>2025-10-09T08:49:48.280Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/quizzes/second_tutorial/index.html</loc>
-    <lastmod>2025-10-09T08:49:48.280Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/tutorials/first_tutorial/topic1.html</loc>
-    <lastmod>2025-10-09T08:49:48.281Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/tutorials/first_tutorial/topic3.html</loc>
-    <lastmod>2025-10-09T08:49:48.282Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/tutorials/second_tutorial/topic1.html</loc>
-    <lastmod>2025-10-09T08:49:48.282Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/in_progress.html</loc>
-    <lastmod>2025-10-09T08:49:48.278Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.openstatprog.com/descriptive-statistics/index.html</loc>
-    <lastmod>2025-10-09T08:49:48.278Z</lastmod>
+    <lastmod>2025-10-30T12:42:57.059Z</lastmod>
   </url>
   <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/conclusion.html</loc>
-    <lastmod>2025-10-09T08:49:48.277Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/tutorials/second_tutorial/topic2.html</loc>
-    <lastmod>2025-10-09T08:49:48.282Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/tutorials/second_tutorial/index.html</loc>
-    <lastmod>2025-10-09T08:49:48.282Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/tutorials/first_tutorial/topic2.html</loc>
-    <lastmod>2025-10-09T08:49:48.281Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/tutorials/first_tutorial/index.html</loc>
-    <lastmod>2025-10-09T08:49:48.281Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/quizzes/second_tutorial/questions/bad_question.html</loc>
+    <loc>https://www.openstatprog.com/descriptive-statistics/quizzes/frequency-tables-baseR/questions/default_arguments1.html</loc>
     <lastmod>2025-10-09T08:49:48.280Z</lastmod>
   </url>
   <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/quizzes/first_tutorial/index.html</loc>
-    <lastmod>2025-10-09T08:49:48.279Z</lastmod>
+    <loc>https://www.openstatprog.com/descriptive-statistics/quizzes/frequency-tables-baseR/index.html</loc>
+    <lastmod>2025-10-30T12:42:27.312Z</lastmod>
   </url>
   <url>
-    <loc>https://www.openstatprog.com/descriptive-statistics/quizzes/first_tutorial/questions/logical.html</loc>
+    <loc>https://www.openstatprog.com/descriptive-statistics/quizzes/frequency-tables-baseR/questions/bad_question.html</loc>
     <lastmod>2025-10-09T08:49:48.280Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.openstatprog.com/descriptive-statistics/tutorials/frequency-tables-baseR/index.html</loc>
+    <lastmod>2025-10-30T12:45:32.846Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.openstatprog.com/descriptive-statistics/tutorials/frequency-tables-baseR/topic1.html</loc>
+    <lastmod>2025-10-09T08:49:48.282Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.openstatprog.com/descriptive-statistics/tutorials/frequency-tables-baseR/topic2.html</loc>
+    <lastmod>2025-10-09T08:49:48.282Z</lastmod>
   </url>
 </urlset>
