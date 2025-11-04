@@ -6,7 +6,7 @@ title: "The summary function"
 stocks <- read.csv(here::here("data", "stocks.csv"), header = TRUE, sep = ",", dec = ".", na.string = c("", "NA"))
 ```
 
-We can also make it clearer by using the summary() command from ‘base R’ (i.e. without installing packages). You can use this on your entire dataset at once. 
+We can produce several of these summary statistics at once by using the summary() command from ‘base R’ (i.e. without installing packages). You can use this on your entire dataset at once. 
 
 ::: practice
 

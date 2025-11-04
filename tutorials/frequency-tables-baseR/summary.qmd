@@ -7,4 +7,4 @@ title: "Summary"
 -   We mainly use frequency tables for variables at the nominal/ordinal level.
 -   Frequency tables include frequencies, but proportions, percentages, and cumulative proportions/percentages can also be added.
 
-Frequency tables are mainly used to clearly display categorical variables (nominal/ordinal), especially if you want to see the specific numbers. In other cases, it is usually smarter to use a visualization (e.g., a histogram). You can learn more about this in the tutorial [BASIC VISUAIZATIONS - ADD LINK].
+Frequency tables are mainly used to clearly display categorical variables (nominal/ordinal), especially if you want to see the specific numbers. In other cases, it is usually smarter to use summary statistics or a visualization (e.g., a histogram).

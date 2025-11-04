@@ -30,6 +30,19 @@ website:
     contents:
       - href: index.qmd
         text: "Overview"
+      - section: tutorials/summarizing-data-baseR/index.qmd
+        text: "Summarizing Data"
+        contents:
+          - href: tutorials/summarizing-data-baseR/mean-min-max.qmd
+            text: "Mean, minimum and maximum"
+          - href: tutorials/summarizing-data-baseR/missing-values.qmd
+            text: "Missing values"
+          - href: tutorials/summarizing-data-baseR/summary-function.qmd
+            text: "Summary function"
+          - href: tutorials/summarizing-data-baseR/describe-function.qmd
+            text: "Describe function"
+          - href: tutorials/summarizing-data-baseR/summary.qmd
+            text: "Summary"
       - section: tutorials/frequency-tables-baseR/index.qmd
         text: "Frequency Tables"
         contents:
@@ -41,18 +54,9 @@ website:
             text: "Cumulative Proportion Tables"
           - href: tutorials/frequency-tables-baseR/cbind-tables.qmd
             text: "Readable Tables"
+          - href: tutorials/frequency-tables-baseR/cross-tab.qmd
+            text: "Crosstables"
           - href: tutorials/frequency-tables-baseR/summary.qmd
-            text: "Summary"
-      - section: tutorials/summarizing-data-baseR/index.qmd
-        text: "Summarizing Data"
-        contents:
-          - href: tutorials/summarizing-data-baseR/mean-min-max.qmd
-            text: "Mean, minimum and maximum"
-          - href: tutorials/summarizing-data-baseR/summary-function.qmd
-            text: "Summary function"
-          - href: tutorials/summarizing-data-baseR/describe-function.qmd
-            text: "Describe function"
-          - href: tutorials/summarizing-data-baseR/summary.qmd
             text: "Summary"
       - href: conclusion.qmd
 

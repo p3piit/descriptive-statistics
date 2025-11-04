@@ -10,6 +10,8 @@ In this tutorial, you will learn:
 
 -   How to make your table readable
 
+-   How to make cross tabulations of two variables
+
 We assume that you already know:
 
 -   What measurement levels are

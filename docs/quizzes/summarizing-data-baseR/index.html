@@ -70,19 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
-div.callout-reading-advanced.callout {
-  border-left-color: red;
-}
-div.callout-reading-advanced.callout-style-default > .callout-header {
-  background-color: rgb(from red r g b / 13%);
-}
-div.callout-reading-advanced .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reading-advanced.callout-style-default .callout-icon::before, div.callout-reading-advanced.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f518' !important;
-  background-image: none;
-}
 div.callout-reading.callout {
   border-left-color: purple;
 }
@@ -91,6 +78,32 @@ div.callout-reading.callout-style-default > .callout-header {
 }
 div.callout-reading .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-reading.callout-style-default .callout-icon::before, div.callout-reading.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f518' !important;
+  background-image: none;
+}
+div.callout-practice.callout {
+  border-left-color: green;
+}
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f085' !important;
+  background-image: none;
+}
+div.callout-reading-advanced.callout {
+  border-left-color: red;
+}
+div.callout-reading-advanced.callout-style-default > .callout-header {
+  background-color: rgb(from red r g b / 13%);
+}
+div.callout-reading-advanced .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reading-advanced.callout-style-default .callout-icon::before, div.callout-reading-advanced.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f518' !important;
@@ -107,19 +120,6 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f0c1' !important;
-  background-image: none;
-}
-div.callout-practice.callout {
-  border-left-color: green;
-}
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f085' !important;
   background-image: none;
 }
 </style>
@@ -223,13 +223,54 @@ window.Quarto = {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../tutorials/frequency-tables-baseR/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Frequency Tables</span></a>
+            <a href="../../tutorials/summarizing-data-baseR/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summarizing Data</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/summarizing-data-baseR/mean-min-max.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mean, minimum and maximum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/summarizing-data-baseR/missing-values.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Missing values</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/summarizing-data-baseR/summary-function.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summary function</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/summarizing-data-baseR/describe-function.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Describe function</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tutorials/summarizing-data-baseR/summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Summary</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../tutorials/frequency-tables-baseR/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Frequency Tables</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tutorials/frequency-tables-baseR/frequency-table.html" class="sidebar-item-text sidebar-link">
@@ -256,42 +297,13 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../tutorials/frequency-tables-baseR/cross-tab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Crosstables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../tutorials/frequency-tables-baseR/summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Summary</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../tutorials/summarizing-data-baseR/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Summarizing Data</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tutorials/summarizing-data-baseR/mean-min-max.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mean, minimum and maximum</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tutorials/summarizing-data-baseR/summary-function.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Summary function</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tutorials/summarizing-data-baseR/describe-function.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Describe function</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tutorials/summarizing-data-baseR/summary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Summary</span></a>
   </div>
 </li>
@@ -355,18 +367,18 @@ Note
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which of the following expressions will return <code>TRUE</code>?</p>
-<div id="webex-bb561f0d026fd2e5148fea82bed7862d" class="webex-checkboxgroup" data-answer="OVMZBh1XHFUcAxpWOQ==">
-<label><input type="checkbox" autocomplete="off" name="bb561f0d026fd2e5148fea82bed7862d"><span><code>"foo" != "bar"</code></span></label><label><input type="checkbox" autocomplete="off" name="bb561f0d026fd2e5148fea82bed7862d"><span><code>"foo" == "bar"</code></span></label><label><input type="checkbox" autocomplete="off" name="bb561f0d026fd2e5148fea82bed7862d"><span><code>TRUE</code></span></label><label><input type="checkbox" autocomplete="off" name="bb561f0d026fd2e5148fea82bed7862d"><span><code>!(6 &gt; 7)</code></span></label><label><input type="checkbox" autocomplete="off" name="bb561f0d026fd2e5148fea82bed7862d"><span><code>(8 + 6) &lt; (8 * 6)</code></span></label><label><input type="checkbox" autocomplete="off" name="bb561f0d026fd2e5148fea82bed7862d"><span><code>TRUE &amp; FALSE</code></span></label>
+<div id="webex-04f8963d4bba450ec58d8e46b856ff74" class="webex-checkboxgroup" data-answer="awRKCBUHH1QYUk5QaQ==">
+<label><input type="checkbox" autocomplete="off" name="04f8963d4bba450ec58d8e46b856ff74"><span><code>"alice" == "bob" &amp; "alice" == "alice"</code></span></label><label><input type="checkbox" autocomplete="off" name="04f8963d4bba450ec58d8e46b856ff74"><span><code>"alice" == "bob" | "alice" != "alice"</code></span></label><label><input type="checkbox" autocomplete="off" name="04f8963d4bba450ec58d8e46b856ff74"><span><code>"alice" == "bob" | "alice" == "alice"</code></span></label><label><input type="checkbox" autocomplete="off" name="04f8963d4bba450ec58d8e46b856ff74"><span><code>!TRUE</code></span></label><label><input type="checkbox" autocomplete="off" name="04f8963d4bba450ec58d8e46b856ff74"><span><code>FALSE</code></span></label><label><input type="checkbox" autocomplete="off" name="04f8963d4bba450ec58d8e46b856ff74"><span><code>!(6 &gt; 7)</code></span></label>
 </div>
 </div>
 <div class="webex-solution">
 <ul>
-<li>TRUE: “foo” is not equal to “bar”</li>
-<li>FALSE: “foo” is not equal to “bar”</li>
-<li>TRUE: Trivially</li>
-<li>TRUE: 6 is not strictly greater than 7, and that result is negated</li>
-<li>TRUE: 14 is strictly less than 48</li>
+<li>FALSE: “alice” is not equal to “bob”</li>
+<li>FALSE: “alice” is not equal to “bob”, and “alice” is equal to “alice”</li>
+<li>TRUE: “alice” is not equal to “bob”, but “alice is equal to”alice”</li>
+<li>FALSE: Trivial negation</li>
 <li>FALSE: Trivially</li>
+<li>TRUE: 6 is not strictly greater than 7, and that result is negated</li>
 </ul>
 </div>
 </div>
@@ -374,13 +386,13 @@ Note
 <div class="webex-check webex-box">
 <p>What is the value of <span class="math inline">\(x\)</span> in the following equation?</p>
 <p><span class="math display">\[
-x = \frac{2 + 2}{3}
+x = \frac{5 + 2}{3}
 \]</span></p>
 <p>Round your answer to two decimal places.</p>
-<p><input class="webex-solveme nospaces" id="webex-0f522b9668d9a6c01bc21d2197cf720d" data-tol="0.01" size="20" data-answer="a0QEHAFRG2s="></p>
+<p><input class="webex-solveme nospaces" id="webex-8d502e54bb7971d55fe89d50098c9326" data-tol="0.01" size="20" data-answer="Y0YHHgFWF2k="></p>
 </div>
 <div class="webex-solution">
-<p>After rounding, we get 1.33.</p>
+<p>After rounding, we get 2.33.</p>
 </div>
 </div>
 <div class="webex-question">
@@ -423,18 +435,18 @@ cov2cor(V)
 </div>
 </div>
 <p>What is the default value for the <code>use</code> argument of the <code>cor()</code> function?</p>
-<div id="webex-d0d9124af45436b56fe5c088669d9a8a" class="webex-radiogroup" data-answer="PwBICR0CGFFKBWg=">
-<label><input type="radio" autocomplete="off" name="d0d9124af45436b56fe5c088669d9a8a"><span><code>method</code></span></label><label><input type="radio" autocomplete="off" name="d0d9124af45436b56fe5c088669d9a8a"><span><code>c("pearson", "spearman", "kendall")</code></span></label><label><input type="radio" autocomplete="off" name="d0d9124af45436b56fe5c088669d9a8a"><span><code>"kendall"</code></span></label><label><input type="radio" autocomplete="off" name="d0d9124af45436b56fe5c088669d9a8a"><span><code>NULL</code></span></label><label><input type="radio" autocomplete="off" name="d0d9124af45436b56fe5c088669d9a8a"><span><code>"everything"</code></span></label>
+<div id="webex-7343b6fd2a7bb45052ee7942fef45758" class="webex-radiogroup" data-answer="bAMYAk4GSlQeUWo=">
+<label><input type="radio" autocomplete="off" name="7343b6fd2a7bb45052ee7942fef45758"><span>The <code>use</code> argument does not have a defined default value.</span></label><label><input type="radio" autocomplete="off" name="7343b6fd2a7bb45052ee7942fef45758"><span><code>"everything"</code></span></label><label><input type="radio" autocomplete="off" name="7343b6fd2a7bb45052ee7942fef45758"><span><code>"spearman"</code></span></label><label><input type="radio" autocomplete="off" name="7343b6fd2a7bb45052ee7942fef45758"><span><code>c("pearson", "spearman", "kendall")</code></span></label><label><input type="radio" autocomplete="off" name="7343b6fd2a7bb45052ee7942fef45758"><span><code>NULL</code></span></label>
 </div>
 </div>
 <div class="webex-solution">
 <p>The default value for the <code>use</code> argument is <code>"everything"</code>.</p>
 <ul>
-<li>Wrong: This is an argument name</li>
-<li>Wrong: These are all of the possible methods</li>
-<li>Wrong: This is one of the possible methods</li>
-<li>Wrong: This is the default value for <code>y</code></li>
+<li>Wrong: There is a default value defined for <code>use</code>.</li>
 <li>Correct</li>
+<li>Wrong: This is one of the possible methods</li>
+<li>Wrong: These are all of the possible methods</li>
+<li>Wrong: This is the default value for <code>y</code></li>
 </ul>
 </div>
 </div>

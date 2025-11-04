@@ -11,16 +11,14 @@ format:
 source(here::here("R", "buttons.R"))
 ```
 
-Use this page to provide some kind of brief wrap-up.
+In this module we discussed how to summarize numeric and categorical data using summary statistics and frequency tables
 
 ## Next Steps
 
-If your module feeds naturally into another, link that module through the button below as a suggestion for further study.
-
-- Here, we're linking to the *First Steps* module.
+Often it is useful and more intuitive to provide a visual summary of your data. Check out the Basic Visualization Module for this purpose.
 
 ```{r}
 #| echo: false
 #| results: asis
-next_module_button("https://www.openstatprog.com/first-steps/")
+next_module_button("https://www.openstatprog.com/basic-visualization/")
 ```

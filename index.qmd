@@ -12,8 +12,9 @@ source(here::here("R", "buttons.R"))
 
 Welcome to the *Descriptive Statistics* module! In this module, you will learn about: 
 
-1. [Frequency tables](/tutorials/frequency-tables-baseR/index.qmd)
-1. [Summarizing data](/tutorials/summarizing-data-baseR/index.qmd) 
+1. [Summarizing data](/tutorials/summarizing-data-baseR/index.qmd): How to calculate summary statistics for numeric data
+1. [Frequency tables](/tutorials/frequency-tables-baseR/index.qmd): How to summarize categorical data
+
 
 Each tutorial will comprise a series of interactive lessons with practice problems embedded throughout.
 
@@ -21,17 +22,19 @@ Each tutorial will comprise a series of interactive lessons with practice proble
 
 After completing this module, you will be able to:
 
-### Frequency Tables - Base R
+### Summarizing Data
 
-1. A thing you should learn from Tutorial 2.
-1. Another thing you should learn from Tutorial 2.
+1. Calculate the mean, the standard deviation and the range of a variable
+1. Create summary statistics using the summary() function
+1. Use the describe() function
+1. Account for missing values in your data when calculating summary statistics
 
-### Summarizing Data - Base R
+### Frequency Tables
 
-1. Load, inspect, structure ( head, str), summary of all (summary())
-1. Summary statistics: mean, median, var, sd, min, max, range
-1. Apply over all numeric columns, sapply
-1. Accounting for missing values in your data (na.rm)
+1. Make frequency tables in R
+1. Make proportion and cumulative proportion tables
+1. Make readable tables including various frequency measures
+1. Making cross tables between two variables
 
 Click the button below to get started with the first tutorial.
 
