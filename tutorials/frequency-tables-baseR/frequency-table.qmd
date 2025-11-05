@@ -9,7 +9,7 @@ songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
 
 In 2009, The Guardian newspaper published a list entitled "1000 songs you need to hear before you die". What kind of songs would they have selected for that? That's exactly what we're going to find out now!
 
-We aquired a dataset containing the 1000 songs and information about them. After importing the data to R, we can look at the first rows of the dataset with the following command:
+We aquired a dataset containing the 1000 songs and information about them. After importing the data to `R`, we can look at the first rows of the dataset with the following command:
 
 ```{r}
 head(songs)
@@ -17,7 +17,7 @@ head(songs)
 
 The dataset contains five columns for the characteristics of the song (which we also call "variables") and 1000 rows, one row for each song.
 
-We are now going to create a frequency table for the theme variable in the data set. To do this, we will use the table() function. We add the exclude = NULL argument to ensure that we can also see how many missing values there are. 
+We are now going to create a frequency table for the theme variable in the data set. To do this, we will use the `table()` function. We add the `exclude = NULL` argument to ensure that we can also see how many missing values there are. 
 
 ```{r}
 table(songs$THEME, exclude = NULL)
@@ -30,7 +30,8 @@ Here you see the resulting frequency table. Frequency means how often a value oc
 #| autorun: true
 #| context: setup
 
-songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
+songs <- read.csv2("data/songs.csv", header = TRUE, sep = ",")
+
 ```
 
 ::: practice

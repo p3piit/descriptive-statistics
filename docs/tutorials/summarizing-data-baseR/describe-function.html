@@ -353,10 +353,21 @@ div.callout-reading-advanced.callout-style-default .callout-icon::before, div.ca
 </header>
 
 
-<p>The summary() function provides a handy overview of descriptive statistics. There is also another function that can do the same thing, and also provides a little more information: describe() from the psych package. We need to install the ‘psych’ package once and then can load it via the library command.</p>
+<p>The <code>summary()</code> function provides a handy overview of descriptive statistics. There is also another function that can do the same thing, and also provides a little more information: <code>describe()</code> from the <code>psych</code> package. We need to install the <code>psych</code> package once and then can load it via the library command.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(stocks)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"psych"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The following package(s) will be installed:
+- psych [2.5.6]
+These packages will be installed into "~/Documents/Open-Stat-Prog/descriptive-statistics/renv/library/macos/R-4.4/aarch64-apple-darwin20".
+
+# Installing packages --------------------------------------------------------
+- Installing psych ...                          OK [linked from cache]
+Successfully installed 1 package in 3 milliseconds.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(stocks)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          vars  n    mean    sd median trimmed   mad  min  max range  skew
 YEAR         1 88 1971.50 25.55 1971.5 1971.50 32.62 1928 2015    87  0.00
@@ -372,7 +383,7 @@ TBONDS_D      0.29 0.04
 SPSTOCK_D    -1.13 0.05</code></pre>
 </div>
 </div>
-<p>Here we can also see, for example, the number of observations per variable (n) and the range (the difference between the minimum and maximum values observed).</p>
+<p>Here we can also see, for example, the number of observations per variable (<code>n</code>) and the range (the difference between the minimum and maximum values observed).</p>
 
 
 

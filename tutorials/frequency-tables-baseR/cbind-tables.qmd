@@ -8,7 +8,7 @@ songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
 
 We have now retrieved various tables (frequencies, proportions, percentages, and the cumulative sum), and we can extract the information we need from them, but they are not very readable. 
 
-We can also combine these different options in R into a single table. We will do this for the variable THEME. 
+We can also combine these different options in R into a single table. We will do this for the variable `THEME`. 
 To do this, we first create all the separate tables and give them clear names:
 
 ```{r}
@@ -19,7 +19,7 @@ percentages <- prop.table(frequencies)*100
 cum_percentages <- cumsum(percentages)
 ```
 
-Then we can combine these tables using the cbind() function. This ensures that each separate table fills one column in the combined table. 
+Then we can combine these tables using the `cbind()` function. This ensures that each separate table fills one column in the combined table. 
 
 ```{r}
 cbind(frequencies, percentages, cum_percentages, proportions, cum_proportions)

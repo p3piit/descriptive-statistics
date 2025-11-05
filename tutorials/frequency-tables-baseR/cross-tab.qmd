@@ -6,7 +6,7 @@ title: "Crosstables"
 songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
 ```
 
-Next to making frequency tables of one variable, we can also look at how often specific values on two variables occur together. We use cross tablulations for this purpose. Cross tabulations use the table() command again but then on two variables: 
+Next to making frequency tables of one variable, we can also look at how often specific values on two variables occur together. We use cross tablulations for this purpose. Cross tabulations use the `table()` command again but then on two variables: 
 
 ```{r}
 table(songs$THEME, songs$YEAR)

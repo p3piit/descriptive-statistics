@@ -107,32 +107,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <style>
-div.callout-reading.callout {
-  border-left-color: purple;
-}
-div.callout-reading.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
-}
-div.callout-reading .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reading.callout-style-default .callout-icon::before, div.callout-reading.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f518' !important;
-  background-image: none;
-}
-div.callout-reading-advanced.callout {
-  border-left-color: red;
-}
-div.callout-reading-advanced.callout-style-default > .callout-header {
-  background-color: rgb(from red r g b / 13%);
-}
-div.callout-reading-advanced .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reading-advanced.callout-style-default .callout-icon::before, div.callout-reading-advanced.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f518' !important;
-  background-image: none;
-}
 div.callout-resource.callout {
   border-left-color: orange;
 }
@@ -146,6 +120,19 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
   content: '\f0c1' !important;
   background-image: none;
 }
+div.callout-reading.callout {
+  border-left-color: purple;
+}
+div.callout-reading.callout-style-default > .callout-header {
+  background-color: rgb(from purple r g b / 13%);
+}
+div.callout-reading .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reading.callout-style-default .callout-icon::before, div.callout-reading.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f518' !important;
+  background-image: none;
+}
 div.callout-practice.callout {
   border-left-color: green;
 }
@@ -157,6 +144,19 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f085' !important;
+  background-image: none;
+}
+div.callout-reading-advanced.callout {
+  border-left-color: red;
+}
+div.callout-reading-advanced.callout-style-default > .callout-header {
+  background-color: rgb(from red r g b / 13%);
+}
+div.callout-reading-advanced .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reading-advanced.callout-style-default .callout-icon::before, div.callout-reading-advanced.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f518' !important;
   background-image: none;
 }
 </style>
@@ -354,7 +354,7 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
 
 
 <p>What might be clearer than the proportion table on the last page are the cumulative frequencies or proportions. This would allow us to see how many songs in total, or what proportion of all songs, were released before a certain year.</p>
-<p>To do this, we use the cumsum() function on the tables. First the frequency table:</p>
+<p>To do this, we use the <code>cumsum()</code> function on the tables. First the frequency table:</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>table.year <span class="ot">&lt;-</span> <span class="fu">table</span>(songs<span class="sc">$</span>YEAR, <span class="at">exclude =</span> <span class="cn">NULL</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cumsum</span>(table.year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -393,15 +393,15 @@ div.callout-practice.callout-style-default .callout-icon::before, div.callout-pr
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>Which proportion of songs was created before the year 2000?</p>
-<div id="webex-ffbdad240aa66682472185bc00a0f0a4" class="webex-radiogroup" data-answer="PVZOVE1VHgRt">
-<label><input type="radio" autocomplete="off" name="ffbdad240aa66682472185bc00a0f0a4"><span>0.888</span></label><label><input type="radio" autocomplete="off" name="ffbdad240aa66682472185bc00a0f0a4"><span>0.876</span></label><label><input type="radio" autocomplete="off" name="ffbdad240aa66682472185bc00a0f0a4"><span>876</span></label><label><input type="radio" autocomplete="off" name="ffbdad240aa66682472185bc00a0f0a4"><span>888</span></label>
+<div id="webex-a1fd2478d5139c51ad03872977d38c18" class="webex-radiogroup" data-answer="OgBKVB4EGwg5">
+<label><input type="radio" autocomplete="off" name="a1fd2478d5139c51ad03872977d38c18"><span>876</span></label><label><input type="radio" autocomplete="off" name="a1fd2478d5139c51ad03872977d38c18"><span>0.888</span></label><label><input type="radio" autocomplete="off" name="a1fd2478d5139c51ad03872977d38c18"><span>0.876</span></label><label><input type="radio" autocomplete="off" name="a1fd2478d5139c51ad03872977d38c18"><span>888</span></label>
 </div>
 </div>
 <div class="webex-solution">
 <ul>
 <li>Wrong</li>
-<li>Correct</li>
 <li>Wrong</li>
+<li>Correct</li>
 <li>Wrong</li>
 </ul>
 </div>

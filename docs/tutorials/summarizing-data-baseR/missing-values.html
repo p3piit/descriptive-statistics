@@ -1660,19 +1660,6 @@ globalThis.qwebrExecuteCode = async function (
 
 </script>
 <style>
-div.callout-reading-advanced.callout {
-  border-left-color: red;
-}
-div.callout-reading-advanced.callout-style-default > .callout-header {
-  background-color: rgb(from red r g b / 13%);
-}
-div.callout-reading-advanced .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reading-advanced.callout-style-default .callout-icon::before, div.callout-reading-advanced.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f518' !important;
-  background-image: none;
-}
 div.callout-reading.callout {
   border-left-color: purple;
 }
@@ -1681,6 +1668,32 @@ div.callout-reading.callout-style-default > .callout-header {
 }
 div.callout-reading .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-reading.callout-style-default .callout-icon::before, div.callout-reading.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f518' !important;
+  background-image: none;
+}
+div.callout-practice.callout {
+  border-left-color: green;
+}
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f085' !important;
+  background-image: none;
+}
+div.callout-reading-advanced.callout {
+  border-left-color: red;
+}
+div.callout-reading-advanced.callout-style-default > .callout-header {
+  background-color: rgb(from red r g b / 13%);
+}
+div.callout-reading-advanced .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reading-advanced.callout-style-default .callout-icon::before, div.callout-reading-advanced.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f518' !important;
@@ -1697,19 +1710,6 @@ div.callout-resource.callout-style-default .callout-icon::before, div.callout-re
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f0c1' !important;
-  background-image: none;
-}
-div.callout-practice.callout {
-  border-left-color: green;
-}
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f085' !important;
   background-image: none;
 }
 </style>
@@ -2209,19 +2209,19 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 6 1933      2      50        1         1</code></pre>
 </div>
 </div>
-<p>You will notice that there are missing values on the TBONDS variable. In R, missing values can be presented in different ways.</p>
+<p>You will notice that there are missing values on the <code>TBONDS</code> variable. In <code>R</code>, missing values can be presented in different ways.</p>
 <ul>
-<li>Standard format: the correct way to represent a missing value is NA which is a logical class</li>
-<li>Non-standard formats: these are usually character strings such as “No answer” or “Don’t know”</li>
+<li>Standard format: the correct way to represent a missing value is <code>NA</code> which is a logical class</li>
+<li>Non-standard formats: these are usually character strings such as <code>"No answer"</code> or <code>"Don’t know"</code></li>
 </ul>
-<p>You can easily search an entire data for missing values in <em>standard format</em> using anyNA(). If missing values are present this will return “TRUE”, else “FALSE” if there are no missing values.</p>
+<p>You can easily search an entire data for missing values in <em>standard format</em> using <code>anyNA()</code>. If missing values are present this will return <code>TRUE</code>, else <code>FALSE</code> if there are no missing values.</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anyNA</span>(stocks)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] TRUE</code></pre>
 </div>
 </div>
-<p>So we know there is at least one missing value in stocks, but we don’t know where. You can find the position of missing values in the data using is.na(). This returns a “TRUE” or “FALSE” response rowwise and columwise.</p>
+<p>So we know there is at least one missing value in stocks, but we don’t know where. You can find the position of missing values in the data using <code>is.na()</code>. This returns a <code>TRUE</code> or <code>FALSE</code> response rowwise and columwise.</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(stocks)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -2316,28 +2316,28 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 [88,] FALSE  FALSE   FALSE    FALSE     FALSE</code></pre>
 </div>
 </div>
-<p>Both anyNA() and is.na() are generic methods of detecting standard missing values, and the output is not very informative. <em>Non-standard missing values</em> are more difficult to find because R doesn’t know that they are missing. Depending on your research question, you may want to convert non-standard missing data responses to NA for smoother data manipulation. You may also decided that these types of responses are informative and that you want to keep them as they are.</p>
+<p>Both <code>anyNA()</code> and <code>is.na()</code> are generic methods of detecting standard missing values, and the output is not very informative. <em>Non-standard missing values</em> are more difficult to find because <code>R</code> doesn’t know that they are missing. Depending on your research question, you may want to convert non-standard missing data responses to <code>NA</code> for smoother data manipulation. You may also decided that these types of responses are informative and that you want to keep them as they are.</p>
 <section id="accounting-for-missing-values-when-calculating-summary-statistics" class="level3">
 <h3 class="anchored" data-anchor-id="accounting-for-missing-values-when-calculating-summary-statistics">Accounting for missing values when calculating summary statistics</h3>
 <p>If we calculate summary statistics such as the mean or the standard deviation, we have to take missing values into account.</p>
-<p>The parameter na.rm in R stands for “NA remove” and ignores standard missing values (those that are set to NA) during calculations. By setting na.rm = TRUE, functions like mean() or sd() compute results without being affected by missing values.</p>
-<p>The na.rm parameter,includes a Boolean value—TRUE or FALSE. When we set na.rm = TRUE, R excludes NA values from the calculations. Without this parameter, functions would return NA if missing values are present in the data. Take a look.</p>
-<p>First, we calculate the mean of stocks without using na.rm:</p>
+<p>The parameter <code>na.rm</code> in <code>R</code> stands for <code>"NA remove"</code> and ignores standard missing values (those that are set to <code>NA</code>) during calculations. By setting <code>na.rm = TRUE</code>, functions like <code>mean()</code> or <code>sd()</code> compute results without being affected by missing values.</p>
+<p>The <code>na.rm</code> parameter,includes a Boolean value: <code>TRUE</code> or <code>FALSE</code>. When we set <code>na.rm = TRUE</code>, <code>R</code> excludes <code>NA</code> values from the calculations. Without this parameter, functions would return <code>NA</code> if missing values are present in the data. Take a look.</p>
+<p>First, we calculate the mean of stocks without using <code>na.rm</code>:</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(stocks<span class="sc">$</span>TBONDS)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] NA</code></pre>
 </div>
 </div>
-<p>As there are missing values on the variable, the results of the calculation is “NA”.</p>
-<p>In the next example, we add na.rm:</p>
+<p>As there are missing values on the variable, the results of the calculation is <code>NA</code>.</p>
+<p>In the next example, we add <code>na.rm</code>:</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(stocks<span class="sc">$</span>TBONDS, <span class="at">na.rm=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 5.463415</code></pre>
 </div>
 </div>
-<p>Now we receive our desired result, the mean of TBONDS for all available values.</p>
+<p>Now we receive our desired result, the mean of <code>TBONDS</code> for all available values.</p>
 <div class="callout callout-style-default callout-practice callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2348,7 +2348,7 @@ Practice
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Try this yourself. Request the mean of TBONDS_D using na.rm.</p>
+<p>Try this yourself. Request the mean of <code>TBONDS_D</code> using <code>na.rm</code>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive Editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
 <div class="tab-content">

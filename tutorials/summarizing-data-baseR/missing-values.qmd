@@ -12,52 +12,52 @@ Let's take another look at the stocks data.
 head(stocks)
 ```
 
-You will notice that there are missing values on the TBONDS variable. In R, missing values can be presented in different ways.
+You will notice that there are missing values on the `TBONDS` variable. In `R`, missing values can be presented in different ways.
 
--   Standard format: the correct way to represent a missing value is NA which is a logical class
--   Non-standard formats: these are usually character strings such as “No answer” or “Don’t know”
+-   Standard format: the correct way to represent a missing value is `NA` which is a logical class
+-   Non-standard formats: these are usually character strings such as `"No answer"` or `"Don’t know"`
 
-You can easily search an entire data for missing values in *standard format* using anyNA(). If missing values are present this will return “TRUE”, else “FALSE” if there are no missing values.
+You can easily search an entire data for missing values in *standard format* using `anyNA()`. If missing values are present this will return `TRUE`, else `FALSE` if there are no missing values.
 
 ```{r}
 anyNA(stocks)
 ```
 
-So we know there is at least one missing value in stocks, but we don’t know where. You can find the position of missing values in the data using is.na(). This returns a “TRUE” or “FALSE” response rowwise and columwise.
+So we know there is at least one missing value in stocks, but we don’t know where. You can find the position of missing values in the data using `is.na()`. This returns a `TRUE` or `FALSE` response rowwise and columwise.
 
 ```{r}
 is.na(stocks)
 ```
 
-Both anyNA() and is.na() are generic methods of detecting standard missing values, and the output is not very informative. 
-*Non-standard missing values* are more difficult to find because R doesn’t know that they are missing. Depending on your research question, you may want to convert non-standard missing data responses to NA for smoother data manipulation. You may also decided that these types of responses are informative and that you want to keep them as they are.
+Both `anyNA()` and `is.na()` are generic methods of detecting standard missing values, and the output is not very informative. 
+*Non-standard missing values* are more difficult to find because `R` doesn’t know that they are missing. Depending on your research question, you may want to convert non-standard missing data responses to `NA` for smoother data manipulation. You may also decided that these types of responses are informative and that you want to keep them as they are.
 
 ### Accounting for missing values when calculating summary statistics 
 
 If we calculate summary statistics such as the mean or the standard deviation, we have to take missing values into account. 
 
-The parameter na.rm in R stands for "NA remove" and ignores standard missing values (those that are set to NA) during calculations. By setting na.rm = TRUE, functions like mean() or sd() compute results without being affected by missing values.
+The parameter `na.rm` in `R` stands for `"NA remove"` and ignores standard missing values (those that are set to `NA`) during calculations. By setting `na.rm = TRUE`, functions like `mean()` or `sd()` compute results without being affected by missing values.
 
-The na.rm parameter,includes a Boolean value—TRUE or FALSE. When we set na.rm = TRUE, R excludes NA values from the calculations. Without this parameter, functions would return NA if missing values are present in the data. Take a look.
+The `na.rm` parameter,includes a Boolean value: `TRUE` or `FALSE`. When we set `na.rm = TRUE`, `R` excludes `NA` values from the calculations. Without this parameter, functions would return `NA` if missing values are present in the data. Take a look.
 
-First, we calculate the mean of stocks without using na.rm:
+First, we calculate the mean of stocks without using `na.rm`:
 ```{r}
 mean(stocks$TBONDS)
 ```
-As there are missing values on the variable, the results of the calculation is "NA".
+As there are missing values on the variable, the results of the calculation is `NA`.
 
-In the next example, we add na.rm:
+In the next example, we add `na.rm`:
 ```{r}
 mean(stocks$TBONDS, na.rm=TRUE)
 ```
 
-Now we receive our desired result, the mean of TBONDS for all available values. 
+Now we receive our desired result, the mean of `TBONDS` for all available values. 
 
 ::: practice
 
 ## Practice
 
-Try this yourself. Request the mean of TBONDS_D using na.rm.
+Try this yourself. Request the mean of `TBONDS_D` using `na.rm`.
 
 :::: {.panel-tabset}
 ## {{< var tab_title.editor >}}

@@ -6,7 +6,7 @@ title: "Calculating summary statistics of variables"
 stocks <- read.csv(here::here("data", "stocks.csv"), header = TRUE, sep = ",", dec = ".", na.string = c("", "NA"))
 ```
 
-The examples in this lesson are based on a data set about profits from stocks and bonds. We can take a look at the data using head(), which shows us the first 6 rows of the data frame.
+The examples in this lesson are based on a data set about profits from stocks and bonds. We can take a look at the data using `head()`, which shows us the first 6 rows of the data frame.
 
 ```{r}
 head(stocks)
@@ -20,7 +20,7 @@ The data set contains five variables. For which we provide some extra informatio
 -   **TBONDS_D**: Indicates whether Treasury Bonds rose (1) or fell/remained the same (0) that year.
 -   **SPSTOCKS_D**: Indicates whether the S&P 500 stocks rose (1) or fell/remained the same (0) that year.
 
-The str() function tells us what the class of each variable is. You will notice that most variables in the stocks data contain integers.
+The `str()` function tells us what the class of each variable is. You will notice that most variables in the stocks data contain integers.
 
 ```{r}
 str(stocks)
@@ -32,7 +32,7 @@ We will explore this data set further. At the start, we are interested to get mo
 -   the standard deviation
 -   the range (minimum and maximum)
 
-For this purpose, R provides the following functions: 
+For this purpose, `R` provides the following functions: 
 
 ```{r, eval= FALSE}
 mean()
@@ -41,7 +41,7 @@ min()
 max()
 ```
 
-You can use these for a single variable (at a time). You can call up each variable by adding $‘variable name’ after the name of the data frame.
+You can use these for a single variable (at a time). You can call up each variable by adding `$‘variable name’` after the name of the data frame.
 
 ::: practice
 

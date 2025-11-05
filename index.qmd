@@ -25,8 +25,8 @@ After completing this module, you will be able to:
 ### Summarizing Data
 
 1. Calculate the mean, the standard deviation and the range of a variable
-1. Create summary statistics using the summary() function
-1. Use the describe() function
+1. Create summary statistics using the `summary()` function
+1. Use the `describe()` function
 1. Account for missing values in your data when calculating summary statistics
 
 ### Frequency Tables
@@ -41,5 +41,5 @@ Click the button below to get started with the first tutorial.
 ```{r}
 #| echo: false
 #| results: asis
-begin_button("/tutorials/frequency-tables-baseR/index.html")
+begin_button("/tutorials/summarizing-data-baseR/index.html")
 ```

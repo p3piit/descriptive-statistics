@@ -1673,19 +1673,6 @@ div.callout-reading.callout-style-default .callout-icon::before, div.callout-rea
   content: '\f518' !important;
   background-image: none;
 }
-div.callout-practice.callout {
-  border-left-color: green;
-}
-div.callout-practice.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f085' !important;
-  background-image: none;
-}
 div.callout-reading-advanced.callout {
   border-left-color: red;
 }
@@ -1697,6 +1684,19 @@ div.callout-reading-advanced.callout-style-default .callout-icon::before, div.ca
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f518' !important;
+  background-image: none;
+}
+div.callout-practice.callout {
+  border-left-color: green;
+}
+div.callout-practice.callout-style-default > .callout-header {
+  background-color: rgb(from green r g b / 13%);
+}
+div.callout-practice .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-practice.callout-style-default .callout-icon::before, div.callout-practice.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f085' !important;
   background-image: none;
 }
 div.callout-resource.callout {
@@ -2195,7 +2195,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>table.theme <span class="ot">&lt;-</span> <span class="fu">table</span>(songs<span class="sc">$</span>THEME, <span class="at">exclude =</span> <span class="cn">NULL</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>If we now use the command prop.table() on theme.table, we will see the proportions of the themes. This indicates how large the share of each theme is (with a number between 0 and 1).</p>
+<p>If we now use the command <code>prop.table()</code> on <code>table.theme</code>, we will see the proportions of the themes. This indicates how large the share of each theme is (with a number between 0 and 1).</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.table</span>(table.theme)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -2225,8 +2225,8 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div class="webex-question">
 <div class="webex-check webex-box">
 <p>What percentage of the total number of songs in the Guardian list are about ‘People_and_places’?</p>
-<div id="webex-1666a91a474799f3b6c90fadd378b082" class="webex-radiogroup" data-answer="agYaBk0IHVFp">
-<label><input type="radio" autocomplete="off" name="1666a91a474799f3b6c90fadd378b082"><span>&lt;NA</span></label><label><input type="radio" autocomplete="off" name="1666a91a474799f3b6c90fadd378b082"><span>13.9</span></label><label><input type="radio" autocomplete="off" name="1666a91a474799f3b6c90fadd378b082"><span>14.5</span></label><label><input type="radio" autocomplete="off" name="1666a91a474799f3b6c90fadd378b082"><span>13.1</span></label>
+<div id="webex-6e65fb6bd4b9e9941fbd18620d8c6094" class="webex-radiogroup" data-answer="bVUaBUpTGlI5">
+<label><input type="radio" autocomplete="off" name="6e65fb6bd4b9e9941fbd18620d8c6094"><span>&lt;NA</span></label><label><input type="radio" autocomplete="off" name="6e65fb6bd4b9e9941fbd18620d8c6094"><span>13.1</span></label><label><input type="radio" autocomplete="off" name="6e65fb6bd4b9e9941fbd18620d8c6094"><span>14.5</span></label><label><input type="radio" autocomplete="off" name="6e65fb6bd4b9e9941fbd18620d8c6094"><span>13.9</span></label>
 </div>
 </div>
 <div class="webex-solution">
@@ -2252,7 +2252,7 @@ Practice
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Make a frequency table and a proportion table for the variable “YEAR”. Use again the exclude = NULL argument.</p>
+<p>Make a frequency table and a proportion table for the variable “YEAR”. Use again the<code>exclude = NULL</code> argument.</p>
 <p><em>NOTE:</em> The `songs’ dataset is already loaded in the working directory of this <em>webr</em> session.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive Editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>

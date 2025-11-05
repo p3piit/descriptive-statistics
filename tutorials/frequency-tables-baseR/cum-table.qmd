@@ -9,7 +9,7 @@ songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
 What might be clearer than the proportion table on the last page are the cumulative frequencies or proportions.
 This would allow us to see how many songs in total, or what proportion of all songs, were released before a certain year.
 
-To do this, we use the cumsum() function on the tables. First the frequency table: 
+To do this, we use the `cumsum()` function on the tables. First the frequency table: 
 
 ```{r}
 table.year <- table(songs$YEAR, exclude = NULL)

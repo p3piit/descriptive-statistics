@@ -2,8 +2,8 @@
 title: "Summary"
 ---
 
--   In R, we can create frequency tables using table(), prop.table(), and cumsum().
--   Sometimes you can use exclude = NULL. Think carefully about what this means for your interpretation of the content!
+-   In R, we can create frequency tables using `table()`, `prop.table()`, and `cumsum()`.
+-   Sometimes you can use `exclude = NULL`. Think carefully about what this means for your interpretation of the content!
 -   We mainly use frequency tables for variables at the nominal/ordinal level.
 -   Frequency tables include frequencies, but proportions, percentages, and cumulative proportions/percentages can also be added.
 

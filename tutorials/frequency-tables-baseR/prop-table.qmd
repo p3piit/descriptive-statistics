@@ -14,7 +14,7 @@ As a first step, we can save the table as an object for further processing:
 table.theme <- table(songs$THEME, exclude = NULL)
 ```
 
-If we now use the command prop.table() on theme.table, we will see the proportions of the themes. This indicates how large the share of each theme is (with a number between 0 and 1). 
+If we now use the command `prop.table()` on `table.theme`, we will see the proportions of the themes. This indicates how large the share of each theme is (with a number between 0 and 1). 
 
 ```{r}
 prop.table(table.theme)
@@ -51,7 +51,7 @@ songs <- read.csv2(here::here("data", "songs.csv"), header=TRUE, sep=",")
 
 ## Practice
 
-Make a frequency table and a proportion table for the variable "YEAR". Use again the exclude = NULL argument.
+Make a frequency table and a proportion table for the variable "YEAR". Use again the`exclude = NULL` argument.
 
 *NOTE:* The `songs' dataset is already loaded in the working directory of this *webr* session.
 
