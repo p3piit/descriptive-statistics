@@ -1,0 +1,26 @@
+---
+title: "Cumulative Proportion Table"
+---
+
+```{r, echo = FALSE}
+songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
+```
+
+Cumulative proportions are useful when categories have a meaningful order—such as ratings or levels of satisfaction. 
+We can compute them with `cumsum()`:
+
+```{r}
+library(dplyr)
+songs %>%
+  count(THEME) %>%
+  mutate(
+    prop  = n / sum(n),
+    cum_prop = cumsum(prop)
+  )
+```
+
+This produces a table showing the distribution and how it accumulates across categories.
+
+If the categories are not already ordered, you may want to `arrange()` them before computing the cumulative values.
+
+

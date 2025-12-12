@@ -1,0 +1,7 @@
+---
+title: "Frequency Tables with `dplyr`"
+---
+
+Frequency tables are one of the simplest ways to explore how values are distributed within a variable. While base R provides functions such as `table()` and `prop.table()`, the tidyverse offers a more readable and consistent approach, especially when you are already working within pipelines.
+
+In this section, we will look at how to compute frequencies, proportions, cumulative proportions, and cross-tabulations using tidyverse tools.

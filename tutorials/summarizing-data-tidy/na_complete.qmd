@@ -1,0 +1,42 @@
+---
+title: "Counting and Missing Values"
+---
+
+```{r, echo = FALSE}
+stocks <- read.csv(here::here("data", "stocks.csv"), header = TRUE, sep = ",", dec = ".", na.string = c("", "NA"))
+```
+
+The tidyverse includes simple helpers for counting observations, unique values, and missing data.
+These are especially useful for quick checks.
+
+If you just want to know how many rows your dataset contains, you can use `n()` inside `summarise()`:
+
+```{r}
+library(dplyr)
+stocks %>% summarise(n = n())
+```
+
+To look at missing data, we combine `is.na()` with `sum()`. This lets us count all the missing values in a particular column, making the amount of missingness explicit:
+
+```{r}
+stocks %>% summarise(missing = sum(is.na(TBONDS)))
+```
+
+Similarly, we might want to know how many distinct values appear in a variable:
+
+```{r}
+stocks %>% summarise(unique = n_distinct(SPSTOCK_D))
+```
+
+We can also check how many rows are fully complete—meaning no missing values in any column—using `complete.cases()`:
+
+```{r}
+stocks %>% summarise(complete_rows = sum(complete.cases(.)))
+```
+
+
+
+
+
+
+

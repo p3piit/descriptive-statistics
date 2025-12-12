@@ -8,11 +8,18 @@ stocks <- read.csv(here::here("data", "stocks.csv"), header = TRUE, sep = ",", d
 
 We can produce several of these summary statistics at once by using the `summary()` command from ‘base R’ (i.e. without installing packages). You can use this on your entire dataset at once. 
 
+```{webr-r}
+#| autorun: true
+#| context: setup
+download.file("https://openstatprog.com/raw-data/stocks.csv", "stocks.csv")
+stocks <- read.csv("stocks.csv")
+```
+
 ::: practice
 
 ## Practice
 
-Try requesting the summary statistics for the entire stocks dataset. 
+Try requesting the summary statistics for the entire `stocks` dataset. 
 
 :::: {.panel-tabset}
 ## {{< var tab_title.editor >}}
@@ -36,7 +43,7 @@ If you want to retrieve descriptive statistics for multiple variables, you can u
 
 ## Practice
 
-Try requesting the summary statistics for column 2 and 5 of stocks. 
+Try requesting the summary statistics for column 2 and 5 of `stocks`. 
 
 :::: {.panel-tabset}
 ## {{< var tab_title.editor >}}

@@ -1,0 +1,67 @@
+---
+title: "Proportion Tables "
+---
+
+```{r, echo = FALSE}
+songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
+```
+
+Once you have the frequencies, the next step is often to compute proportions: the share of the sample represented by each category. Because `count()` returns a tibble, we can easily extend it using `mutate()`:
+
+```{r}
+library(dplyr)
+songs %>%
+  count(THEME) %>%
+  mutate(prop = n / sum(n))
+```
+
+This creates a new column prop containing the relative frequency of each category.
+
+You can also turn proportions into percentages:
+
+```{r}
+songs %>%
+  count(THEME) %>%
+  mutate(
+    prop = n / sum(n),
+    pct  = prop * 100
+  )
+```
+
+This approach is more explicit and easier to read than `prop.table(table(x))`.
+
+```{webr-r}
+#| autorun: true
+#| context: setup
+download.file("https://openstatprog.com/raw-data/songs.csv", "songs.csv")
+songs <- read.csv("songs.csv")
+library(dplyr)
+```
+
+::: practice
+
+## Practice
+
+Make a frequency table and a proportion table for the variable `YEAR` with `dplyr` functions.
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+songs %>%
+  count(YEAR) %>%
+  mutate(
+    prop = n / sum(n),
+    pct  = prop * 100
+  )
+```
+::::
+
+:::
+

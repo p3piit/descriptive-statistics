@@ -1,0 +1,7 @@
+---
+title: "Summarizing Data with `dplyr`"
+---
+
+The tidyverse offers a coherent and expressive way to compute descriptive statistics. Instead of calling separate functions on individual vectors, tidyverse tools let you describe an entire dataset through clear workflows built with pipelines. The basic idea is always the same, to start with your data, then add layers of transformations one step at a time.
+
+In this section, we explore how to use `dplyr` to compute summary statistics, work with multiple variables at once, handle missing values, and produce grouped summaries.

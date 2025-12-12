@@ -1,0 +1,35 @@
+---
+title: "Grouped Summaries"
+---
+
+```{r, echo = FALSE}
+stocks <- read.csv(here::here("data", "stocks.csv"), header = TRUE, sep = ",", dec = ".", na.string = c("", "NA"))
+```
+
+One of the strongest advantages of tidyverse summaries is their integration with grouping.
+Using `group_by()`, you can split your dataset into subgroups (such as by sex or education level) and compute summaries within each subgroup effortlessly.
+
+For example, the mean of the bonds for the year befoe 1950 and after 1950 can be calculated as follows:
+
+```{r}
+library(dplyr)
+stocks %>%
+  group_by(YEAR < 1950) %>%
+  summarize(mean_bonds = mean(TBONDS, na.rm = TRUE))
+```
+
+Or multiple summaries across decades:
+
+```{r}
+stocks %>%
+  mutate(DECADE = YEAR - YEAR %% 10) %>%
+  group_by(DECADE) %>%
+  summarize(
+    mean_bonds = mean(TBONDS, na.rm = TRUE),
+    sd_bonds = sd(TBONDS, na.rm = TRUE),
+    mean_stocks = mean(SPSTOCK, na.rm = TRUE),
+    sd_stocks = sd(SPSTOCK, na.rm = TRUE)
+  )
+```
+
+

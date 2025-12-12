@@ -11,7 +11,7 @@ format:
 source(here::here("R", "buttons.R"))
 ```
 
-In this module we discussed how to summarize numeric and categorical data using summary statistics and frequency tables
+By finishing this module, you’ve learned how to explore your data in R using both base functions and tidyverse tools. You can now compute summary statistics, build frequency tables, handle missing values, and reshape your data with pivoting. These skills give you a clear picture of how your dataset is structured and prepare you for deeper analysis in the modules ahead.
 
 ## Next Steps
 

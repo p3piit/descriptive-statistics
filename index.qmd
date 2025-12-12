@@ -13,7 +13,10 @@ source(here::here("R", "buttons.R"))
 Welcome to the *Descriptive Statistics* module! In this module, you will learn about: 
 
 1. [Summarizing data](/tutorials/summarizing-data-baseR/index.qmd): How to calculate summary statistics for numeric data
-1. [Frequency tables](/tutorials/frequency-tables-baseR/index.qmd): How to summarize categorical data
+2. [Frequency tables](/tutorials/frequency-tables-baseR/index.qmd): How to summarize categorical data
+3. [Summarizing data with tidyverse](/tutorials/summarizing-data-tidy/index.qmd): How to calculate summary statistics for numeric data using the tidyverse
+4. [Frequency tables with tidyverse](/tutorials/frequency-tables-tidy/index.qmd): How to summarize categorical data using the tidyverse
+5. [pivoting tables](/tutorials/pivots/index.qmd): How to reshape and summarize data 
 
 
 Each tutorial will comprise a series of interactive lessons with practice problems embedded throughout.
@@ -31,10 +34,30 @@ After completing this module, you will be able to:
 
 ### Frequency Tables
 
-1. Make frequency tables in R
+1. Make frequency tables in `R`
 1. Make proportion and cumulative proportion tables
 1. Make readable tables including various frequency measures
 1. Making cross tables between two variables
+
+### Summarizing Data with the Tidyverse
+
+1. Use `summarise()` to compute descriptive statistics in a tidy, pipeline-based workflow
+2. Apply summary functions to multiple variables at once using `across()`
+3. Create grouped summaries with `group_by()`
+4. Compute counts, proportions, and missingness with tidyverse tools
+
+### Frequency Tables with the Tidyverse
+
+1. Use `count()` to generate tidy frequency tables
+2. Add proportions and cumulative proportions using `mutate()`
+3. Create grouped or conditional frequency tables
+
+Pivoting and Reshaping Data
+
+1. Understand when long or wide format is most appropriate for descriptive analyses
+2. Use `pivot_longer()` to transform repeated measures into tidy long format
+3. Use `pivot_wider()` to restructure summaries or prepare matrix-like data
+4. Control naming conventions and handle missing values during pivoting
 
 Click the button below to get started with the first tutorial.
 

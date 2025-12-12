@@ -1,0 +1,67 @@
+---
+title: "Basic Summaries"
+---
+
+```{r, echo = FALSE}
+stocks <- read.csv(here::here("data", "stocks.csv"), header = TRUE, sep = ",", dec = ".", na.string = c("", "NA"))
+```
+
+The heart of tidyverse descriptive statistics is the `summarise()` function. It reduces a dataset to one or more summary statistics.
+
+Suppose we want to compute the mean, minimum, and maximum of the `YEAR` variable in the stock data:
+
+```{r}
+library(dplyr)
+stocks %>%
+  summarise(
+    mean_year = mean(YEAR, na.rm = TRUE),
+    min_year  = min(YEAR,  na.rm = TRUE),
+    max_year  = max(YEAR,  na.rm = TRUE)
+  )
+
+```
+
+This code produces a one-row tibble containing the requested values.
+
+Notice that we must explicitly set `na.rm = TRUE`. Unlike base R’s `summary()`, tidyverse functions never remove missing values unless told to do so. This makes missing-data handling visible and intentional.
+
+```{webr-r}
+#| autorun: true
+#| context: setup
+download.file("https://openstatprog.com/raw-data/stocks.csv", "stocks.csv")
+stocks <- read.csv("stocks.csv")
+library(dplyr)
+```
+
+
+::: practice
+
+## Practice
+
+Try requesting the mean of `SPSTOCKS` from the `Stocks` dataset using `dplyr`. 
+
+*NOTE:* The `songs` dataset and the `dplyr` package are already loaded in the working directory of this *webr* session.
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+stocks %>%
+  summarise(
+    mean_spstocks = mean(SPSTOCK, na.rm = TRUE)
+  )
+```
+::::
+
+:::
+
+
+
+
+

@@ -1,0 +1,51 @@
+---
+title: "Long Format vs. Wide Format"
+---
+
+Choosing between long and wide format depends on what you want to do with your data. Long format is usually better for analysis and visualization, while wide format is often better for inspection and for methods that require matrix-like inputs. Being able to move between the two lets you work in the most convenient form for each task.
+
+## Long Format
+
+Long format works well when you want to summarize or visualize repeated measures. Once each item becomes a row category, grouping and plotting become much simpler.
+
+```{r}
+library(dplyr)
+library(tidyr)
+data("bfi", package = "psych")
+bfi_long <- bfi %>%
+  pivot_longer(A1:A5, names_to = "item", values_to = "response") %>%
+  select(item, response, everything())
+head(bfi_long)
+
+bfi_long %>%
+  group_by(item) %>%
+  summarise(mean = mean(response, na.rm = TRUE))
+
+```
+
+Long format also works naturally with `ggplot2`, especially for faceting.
+
+## Wide Format
+
+Wide format is helpful when you need all variables as separate columns, such as for correlation matrices or for exporting readable summary tables.
+
+```{r}
+bfi %>%
+  select(A1:A5) %>%
+  cor(use = "pairwise")
+```
+
+
+You can also pivot back to wide format after summarizing:
+
+```{r}
+bfi_long %>%
+  group_by(item) %>%
+  summarise(mean = mean(response, na.rm = TRUE)) %>%
+  pivot_wider(names_from = item, values_from = mean)
+```
+
+
+  
+  
+  

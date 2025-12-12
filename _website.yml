@@ -1,4 +1,4 @@
-website:
+ website:
 
   title: "Descriptive Statistics"
 
@@ -57,7 +57,40 @@ website:
           - href: tutorials/frequency-tables-baseR/cross-tab.qmd
             text: "Crosstables"
           - href: tutorials/frequency-tables-baseR/summary.qmd
-            text: "Summary"
+            text: "Summary"      
+      - section: tutorials/summarizing-data-tidy/index.qmd
+        text: "Summarizing Data with tidyverse"
+        contents:
+          - href: tutorials/summarizing-data-tidy/basic_summaries.qmd
+            text: "Basic Summaries"
+          - href: tutorials/summarizing-data-tidy/across.qmd
+            text: "Summaries Across Multiple Variables"
+          - href: tutorials/summarizing-data-tidy/group_by.qmd
+            text: "Grouped Summaries"
+          - href: tutorials/summarizing-data-tidy/na_complete.qmd
+            text: "Counting and Missing Values"
+      - section: tutorials/frequency-tables-tidy/index.qmd
+        text: "Frequency Tables with tidyverse"
+        contents:
+          - href: tutorials/frequency-tables-tidy/freq_tables.qmd
+            text: "Frequency Tables"
+          - href: tutorials/frequency-tables-tidy/prop-table.qmd
+            text: "Proportion Tables"
+          - href: tutorials/frequency-tables-tidy/cum-table.qmd
+            text: "Cumulative Proportion Tables"
+          - href: tutorials/frequency-tables-tidy/more_readable.qmd
+            text: "Making Frequency Tables More Readable"
+          - href: tutorials/frequency-tables-tidy/crosstable.qmd
+            text: "Crosstables"
+      - section: tutorials/pivot/index.qmd
+        text: "Pivoting Tables"
+        contents:
+          - href: tutorials/pivot/pivot_longer.qmd
+            text: "From Wide to Long"
+          - href: tutorials/pivot/pivot_wider.qmd
+            text: "From Long to Wide"
+          - href: tutorials/pivot/wide_vs_long.qmd
+            text: "Wide Format vs Long Format"
       - href: conclusion.qmd
 
   page-footer:

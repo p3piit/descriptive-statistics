@@ -1,0 +1,35 @@
+---
+title: "Making Frequency Tables More Readable"
+---
+
+```{r, echo = FALSE}
+songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
+```
+
+Tidyverse frequency tables are already clean, but you can enhance readability. For example, you might rename columns:
+
+```{r}
+library(dplyr)
+songs %>%
+  count(THEME) %>%
+  rename(
+    frequency = n,
+    music_theme = THEME
+  )
+```
+
+Or format percentages neatly:
+
+```{r}
+songs %>%
+  count(THEME) %>%
+  mutate(
+    percentage = paste(n / sum(n) * 100, "%")
+  ) %>%
+  rename(
+    frequency = n,
+    music_theme = THEME
+  )
+```
+
+You can also pipe the result directly into `knitr::kable()` or `gt::gt()` for presentation-quality tables in reports.

@@ -1,0 +1,10 @@
+---
+title: "Pivotting"
+---
+
+Many datasets do not arrive in the format that is easiest to analyze. Sometimes values that belong in columns are stored in rows, or vice versa. The tidyverse provides two powerful functions, `pivot_longer()` and `pivot_wider()`, that allow you to reshape data flexibly and consistently.
+These functions belong to the `tidyr` package, which is part of the tidyverse.
+
+Pivoting is essential because most statistical and visualization tools expect data in tidy format, where each variable lives in its own column, each observation occupies one row, and each value is a single cell.
+
+In this tutorial, we explore how to go from wide to long format, long to wide format, and how to control names, values, and missing data in the process.

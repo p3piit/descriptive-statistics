@@ -53,6 +53,13 @@ mean(stocks$TBONDS, na.rm=TRUE)
 
 Now we receive our desired result, the mean of `TBONDS` for all available values. 
 
+```{webr-r}
+#| autorun: true
+#| context: setup
+download.file("https://openstatprog.com/raw-data/stocks.csv", "stocks.csv")
+stocks <- read.csv("stocks.csv")
+```
+
 ::: practice
 
 ## Practice

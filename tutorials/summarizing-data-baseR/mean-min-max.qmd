@@ -43,11 +43,21 @@ max()
 
 You can use these for a single variable (at a time). You can call up each variable by adding `$‘variable name’` after the name of the data frame.
 
+```{webr-r}
+#| autorun: true
+#| context: setup
+download.file("https://openstatprog.com/raw-data/stocks.csv", "stocks.csv")
+stocks <- read.csv("stocks.csv")
+```
+
+
 ::: practice
 
 ## Practice
 
-Try requesting the mean of SPSTOCKS from the Stocks dataset. 
+Try requesting the mean of `SPSTOCKS` from the `stocks` dataset. 
+
+*NOTE:* The `songs` dataset is already loaded in the working directory of this *webr* session.
 
 :::: {.panel-tabset}
 ## {{< var tab_title.editor >}}

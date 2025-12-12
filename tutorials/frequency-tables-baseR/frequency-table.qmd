@@ -29,18 +29,17 @@ Here you see the resulting frequency table. Frequency means how often a value oc
 ```{webr-r}
 #| autorun: true
 #| context: setup
-
-songs <- read.csv2("data/songs.csv", header = TRUE, sep = ",")
-
+download.file("https://openstatprog.com/raw-data/songs.csv", "songs.csv")
+songs <- read.csv("songs.csv")
 ```
 
 ::: practice
 
 ## Practice
 
-Make a frequency table for the variable "YEAR". Use again the exclude = NULL argument.
+Make a frequency table for the variable `YEAR`. Use again the `exclude = NULL` argument.
 
-*NOTE:* The `songs' dataset is already loaded in the working directory of this *webr* session.
+*NOTE:* The `songs` dataset is already loaded in the working directory of this *webr* session.
 
 :::: {.panel-tabset}
 ## {{< var tab_title.editor >}}

@@ -1,0 +1,57 @@
+---
+title: "Crosstables"
+---
+
+```{r, echo = FALSE}
+songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
+```
+
+To create a cross-tabulation (a two-way table), tidyverse uses `count()` together with multiple variables:
+
+```{r}
+library(dplyr)
+songs %>%
+  count(THEME, YEAR)
+```
+
+
+This produces a long-format contingency table, which is often easier to manipulate than the wide matrix returned by `table()`.
+
+If you want the joint proportions:
+
+```{r}
+songs %>%
+  count(THEME, YEAR) %>%
+  mutate(prop = n / sum(n))
+```
+
+
+If you want conditional proportions—for example, proportions within each theme—you can use `group_by()`:
+
+```{r}
+songs %>%
+  count(THEME, YEAR) %>%
+  group_by(THEME) %>%
+  mutate(prop_within_theme = n / sum(n)) %>%
+  ungroup()
+```
+
+This is the tidyverse equivalent of:
+
+* `prop.table(table(sex, education), 1) (row proportions)`
+
+* `prop.table(table(sex, education), 2) (column proportions)`
+
+but expressed through clear piping grammar.
+
+If needed, you can pivot from long format to wide format:
+
+```{r}
+library(tidyr)
+songs %>%
+  count(THEME, YEAR) %>%
+  tidyr::pivot_wider(names_from = YEAR, values_from = n, values_fill = 0)
+```
+
+
+This produces the classic contingency matrix. In the next section we will talk more about pivoting data.

@@ -1,0 +1,59 @@
+---
+title: "Frequency tables"
+---
+
+```{r, echo = FALSE}
+songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
+```
+
+The tidyverse provides the `count()` function, a clean and expressive way to produce frequency tables. It takes a data frame and a variable, and returns a tibble with the variable’s values and their frequencies.
+
+```{r}
+library(dplyr)
+songs %>% count(THEME)
+```
+
+This gives a simple table with two columns:
+
+- the category (e.g., levels of education)
+- the number of cases in each category
+
+If you want the categories sorted from most to least frequent, you can add:
+
+```{r}
+songs %>% count(THEME, sort = TRUE)
+```
+
+This replaces `sort(table(x))` with a single tidy and readable expression.
+
+```{webr-r}
+#| autorun: true
+#| context: setup
+download.file("https://openstatprog.com/raw-data/songs.csv", "songs.csv")
+songs <- read.csv("songs.csv")
+library(dplyr)
+```
+
+::: practice
+
+## Practice
+
+Make a frequency table for the variable `YEAR` with `dplyr`. 
+
+*NOTE:* The `songs` dataset and the `dplyr` package are already loaded in the working directory of this *webr* session.
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+songs %>% count(YEAR)
+```
+::::
+
+:::

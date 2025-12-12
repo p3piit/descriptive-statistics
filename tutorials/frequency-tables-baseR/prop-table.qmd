@@ -38,22 +38,20 @@ exams2forms::exams2forms(
 )
 ```
 
-Now, you can try to make these two tables yourself. First make a frequency table of the variable "YEAR". Save it as an object and make a proportion table using the object. 
+Now, you can try to make these two tables yourself. First make a frequency table of the variable `YEAR`. Save it as an object and make a proportion table using the object. 
 
 ```{webr-r}
 #| autorun: true
 #| context: setup
-
-songs <- read.csv2(here::here("data", "songs.csv"), header=TRUE, sep=",")
+download.file("https://openstatprog.com/raw-data/songs.csv", "songs.csv")
+songs <- read.csv("songs.csv")
 ```
 
 ::: practice
 
 ## Practice
 
-Make a frequency table and a proportion table for the variable "YEAR". Use again the`exclude = NULL` argument.
-
-*NOTE:* The `songs' dataset is already loaded in the working directory of this *webr* session.
+Make a frequency table and a proportion table for the variable `YEAR`. Use again the`exclude = NULL` argument.
 
 :::: {.panel-tabset}
 ## {{< var tab_title.editor >}}

@@ -1,0 +1,94 @@
+---
+title: "Summaries Across Multiple Variables"
+---
+
+```{r, echo = FALSE}
+stocks <- read.csv(here::here("data", "stocks.csv"), header = TRUE, sep = ",", dec = ".", na.string = c("", "NA"))
+library(dplyr)
+```
+
+Often, we want to apply the same summary function to several variables.
+The `across()` helper allows us to do this in a compact and readable way.
+
+```{webr-r}
+#| autorun: true
+#| context: setup
+download.file("https://openstatprog.com/raw-data/stocks.csv", "stocks.csv")
+stocks <- read.csv("stocks.csv")
+library(dplyr)
+```
+
+::: practice
+
+## Practice
+
+Try requesting the summary statistics for the entire `stocks` dataset with `dplyr`. 
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+stocks %>%
+  summarise(across(everything(), 
+                    ~ mean(.x, na.rm = TRUE)))
+```
+::::
+
+:::
+
+For example, to compute the mean of the Bonds and the S&P500:
+
+```{r}
+library(dplyr)
+stocks %>%
+  summarise(across(c(TBONDS_D, SPSTOCK), 
+                    ~ mean(.x, na.rm = TRUE)))
+```
+
+`across()` selects columns and applies a function—here, `mean()`—to each of them.
+
+We can also compute multiple summaries per variable by supplying a list of functions:
+
+```{r}
+stocks %>%
+  summarise(across(c(TBONDS_D, SPSTOCK), 
+                    list(mean = ~ mean(.x, na.rm = TRUE),
+                         sd = ~ sd(.x, na.rm = TRUE))))
+```
+
+The result contains several columns for each variable, one for each requested statistic.
+
+::: practice
+
+## Practice
+
+Try requesting the summary statistics for column 2 and 5 of `stocks` with `dplyr`. 
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+stocks %>%
+  summarise(across(c(2, 5), 
+                    list(mean = ~ mean(.x, na.rm = TRUE),
+                         sd = ~ sd(.x, na.rm = TRUE))))
+```
+::::
+:::
+
+
+
+
+

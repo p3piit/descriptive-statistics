@@ -1,0 +1,105 @@
+---
+title: "From Long to Wide"
+---
+
+```{r, echo=FALSE}
+library(dplyr)
+library(tidyr)
+data("bfi", package = "psych")
+bfi_small_long <- bfi %>% 
+  mutate(id = row_number()) %>%
+  select(id, A1, A2, A3) %>%
+  pivot_longer(
+    cols = A1:A3,
+    names_to = "item",
+    values_to = "response"
+  )
+```
+
+
+Sometimes we need to reverse the transformation.
+Imagine we start from a long dataset like the one above and want to restore the original columns—this time using `pivot_wider()`:
+
+```{r}
+library(dplyr)
+library(tidyr)
+bfi_small_wide <- bfi_small_long %>%
+  pivot_wider(
+    names_from = item,
+    values_from = response
+  )
+```
+
+The resulting dataset has one row per participant (id) and separate columns for A1, A2, and A3 again.
+`pivot_wider()` is especially useful when creating summary tables or preparing data for export.
+
+## Dealing with Missing Values
+
+Pivoting can introduce missing values when not every subject has measurements in every category.
+`pivot_wider()` gives you a simple way to fill missing cells with a chosen value:
+
+```{r}
+bfi_small_long %>%
+  pivot_wider(
+    names_from = item,
+    values_from = response,
+    values_fill = 0     # or NA, or any other placeholder
+  )
+
+```
+
+This is useful for preparing matrices for models or visualizations that require complete grids.
+
+```{webr-r}
+#| autorun: true
+#| context: setup
+library(tibble)
+long_data <- tibble(
+  id = c(1, 1, 2, 3, 3, 3),
+  variable = c("X", "Y", "X", "X", "Y", "Z"),
+  value = c(10, 20, 30, 40, 50, 60)
+)
+library(dplyr)
+library(tidyr)
+```
+
+::: practice
+
+## Practice
+
+Transform the this long dataset back to wide format using `pivot_wider()`, ensuring that missing values are filled with -1.
+
+```{r, echo=FALSE}
+library(tibble)
+long_data <- tibble(
+  id = c(1, 1, 2, 3, 3, 3),
+  variable = c("X", "Y", "X", "X", "Y", "Z"),
+  value = c(10, 20, 30, 40, 50, 60)
+)
+head(long_data)
+```
+
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+long_data %>%
+  pivot_wider(
+    names_from = variable,
+    values_from = value,
+    values_fill = -1
+  )
+```
+::::
+
+:::
+
+
+
